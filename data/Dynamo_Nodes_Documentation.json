@@ -7087,10 +7087,14 @@
         "categories": [
             "BuiltIn"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Equals"
+        ],
+        "imageFile": [
+            "Equals"
+        ],
         "folderPath": "BuiltIn/Action",
-        "inDepth": "Add in-depth information about Equals...",
+        "inDepth": "Equals will return a boolean value that is true if ObjectA is equal to ObjectB. In this example file,  the radii (doubles) of two circles are compared.",
         "index": 472
     },
     {
@@ -7098,10 +7102,14 @@
         "categories": [
             "BuiltIn"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "GetKeys"
+        ],
+        "imageFile": [
+            "GetKeys"
+        ],
         "folderPath": "BuiltIn/Action",
-        "inDepth": "Add in-depth information about GetKeys...",
+        "inDepth": "GetKeys will return the keys (index values) of an input list as a new list. In this example file, the keys from a simple list of numbers are extracted as their own list.",
         "index": 473
     },
     {
@@ -7109,10 +7117,14 @@
         "categories": [
             "BuiltIn"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "GetValues"
+        ],
+        "imageFile": [
+            "GetValues"
+        ],
         "folderPath": "BuiltIn/Action",
-        "inDepth": "Add in-depth information about GetValues...",
+        "inDepth": "GetValues will return the values in a list as a new list. In this example file, a simple list of numbers is returned in a new list.",
         "index": 474
     },
     {
@@ -7120,10 +7132,14 @@
         "categories": [
             "BuiltIn"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "GroupByFunction"
+        ],
+        "imageFile": [
+            "GroupByFunction"
+        ],
         "folderPath": "BuiltIn/Action",
-        "inDepth": "Add in-depth information about GroupByFunction...",
+        "inDepth": "GroupByFunction will return a new list grouped by a function. In the example below, two different lists are grouped using List.GetItemAtIndex as the function. This function creates groups (a new list) from each index at a depth of rank 1.",
         "index": 475
     },
     {
@@ -7131,10 +7147,14 @@
         "categories": [
             "BuiltIn"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "ImportFromCSV (filePath, transpose)"
+        ],
+        "imageFile": [
+            "ImportFromCSV (filePath, transpose)"
+        ],
         "folderPath": "BuiltIn/Action",
-        "inDepth": "Add in-depth information about ImportFromCSV (filePath, transpose)...",
+        "inDepth": "ImportFromCSV will return the contents of a CSV (Comma Separated Value) file as a list of lists with the ability to transpose the list (swap columns with rows). In the example below, imported values from the a sample CSV are used to define the Z translation distance of a grid of points. The list structure of the imported values (list of lists) corresponds to list structure of the point grid. Switching the boolean value for transpose will use different values from the CSV for translation distances.",
         "index": 476
     },
     {
@@ -7142,10 +7162,14 @@
         "categories": [
             "BuiltIn"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "ImportFromCSV (filePath)"
+        ],
+        "imageFile": [
+            "ImportFromCSV (filePath)"
+        ],
         "folderPath": "BuiltIn/Action",
-        "inDepth": "Add in-depth information about ImportFromCSV (filePath)...",
+        "inDepth": "ImportFromCSV will return the contents of a CSV (Comma Separated Value) file as a list of lists. In the example below, imported values from the a sample CSV are used to define the Z translation distance of a grid of points. The list structure of the imported values (list of lists) corresponds to list structure of the point grid.",
         "index": 477
     },
     {
@@ -7153,10 +7177,14 @@
         "categories": [
             "BuiltIn"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Insert (list, element, index)"
+        ],
+        "imageFile": [
+            "Insert (list, element, index)"
+        ],
         "folderPath": "BuiltIn/Action",
-        "inDepth": "Add in-depth information about Insert (list, element, index)...",
+        "inDepth": "Insert will insert multiple elements into a list at a specified index. In the example below, we start with a list of numbers and add multiple elements at a certain index. The new elements are inserted at the specified index as a list within the existing list.",
         "index": 478
     },
     {
@@ -7164,10 +7192,14 @@
         "categories": [
             "BuiltIn"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "IsHomogeneous
+        ],
+        "imageFile": [
+            "IsHomogeneous
+        ],
         "folderPath": "BuiltIn/Action",
-        "inDepth": "Add in-depth information about IsHomogeneous...",
+        "inDepth": "IsHomogeneous will return a boolean value based on whether the elements in a list are all of the same type. In the example below, a simple list of numbers is compared to the same list but with a string inserted. The original list is homogeneous (numbers) and the new list is not homogeneous (numbers and a string).",
         "index": 479
     },
     {
@@ -7175,10 +7207,14 @@
         "categories": [
             "BuiltIn"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "IsRectangular"
+        ],
+        "imageFile": [
+            "IsRectangular"
+        ],
         "folderPath": "BuiltIn/Action",
-        "inDepth": "Add in-depth information about IsRectangular...",
+        "inDepth": "IsRectangular will return a boolean value based on whether a list's rows have the same number of elements. In the example below, a grid of points used to create a NurbsSurface has a row added with one more point than the other rows. The surface fails to be created until the extra point is removed and the lists of points becomes rectangular. IsRectangular can be used in this instance to check that the list of points is indeed rectangular and will produce a surface.",
         "index": 480
     },
     {
@@ -7186,10 +7222,14 @@
         "categories": [
             "BuiltIn"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "IsUniformDepth"
+        ],
+        "imageFile": [
+            "IsUniformDepth"
+        ],
         "folderPath": "BuiltIn/Action",
-        "inDepth": "Add in-depth information about IsUniformDepth...",
+        "inDepth": "IsUniformDepth will return a boolean value based on whether the list's depth is consistent (the number of lists inside each list). In the example below, two lists are compared (one of uniform depth and one not) to show the difference. The non-uniform list contains two lists, one of which has two more inside of that. The lists at [0] and [1] are not equal in depth.",
         "index": 481
     },
     {
@@ -7197,10 +7237,14 @@
         "categories": [
             "BuiltIn"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "LoopWhile"
+        ],
+        "imageFile": [
+            "LoopWhile"
+        ],
         "folderPath": "BuiltIn/Action",
-        "inDepth": "Add in-depth information about LoopWhile...",
+        "inDepth": "LoopWhile will return the result of a looped function until the constraints are met. In the example below, a simple loop is created to add 10, starting with 1, until the result is larger than 100. loopWhile accepts variables for its init input and functions for the continueWhile and loopBody inputs. continueWhile defines the constraints of the loop, which in this example is a < function and an argument of 100. loopBody defines what the loop does, which in this example is an + function with an argument of 10."
         "index": 482
     },
     {
@@ -7208,10 +7252,14 @@
         "categories": [
             "BuiltIn"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Map"
+        ],
+        "imageFile": [
+            "Map"
+        ],
         "folderPath": "BuiltIn/Action",
-        "inDepth": "Add in-depth information about Map...",
+        "inDepth": "Map will return the position of a number in a range. In the example below, a value of 4 is mapped to a range of 2 to 6. Since 4 is halfway between 2 and 6, a value of 0.5 is returned.",
         "index": 483
     },
     {
@@ -7219,10 +7267,14 @@
         "categories": [
             "BuiltIn"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "MapTo"
+        ],
+        "imageFile": [
+            "MapTo"
+        ],
         "folderPath": "BuiltIn/Action",
-        "inDepth": "Add in-depth information about MapTo...",
+        "inDepth": "MapTo will return the position of a number in a range (similar to the Map node), then map that position to a target range. A number in the target range is returned based on the position value. In the example below, the number 3 returns a position of 0.5 between a range of 2 and 4. That position value of 0.5 in a target range of 20 to 100 returns the number 60.",
         "index": 484
     },
     {
@@ -7230,10 +7282,14 @@
         "categories": [
             "BuiltIn"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "MaximumItemByKey"
+        ],
+        "imageFile": [
+            "MaximumItemByKey"
+        ],
         "folderPath": "BuiltIn/Action",
-        "inDepth": "Add in-depth information about MaximumItemByKey...",
+        "inDepth": "MaximumItemByKey will return the largest item in a list based on a key. In the example below, a series of three circles with increasing radii are compared using radius as the key. The node returns the circle at the origin as it has the largest radius.",
         "index": 485
     },
     {
@@ -7241,10 +7297,14 @@
         "categories": [
             "BuiltIn"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "MinimumItemByKey"
+        ],
+        "imageFile": [
+            "MinimumItemByKey"
+        ],
         "folderPath": "BuiltIn/Action",
-        "inDepth": "Add in-depth information about MinimumItemByKey...",
+        "inDepth": "MinimumItemByKey will return the smallest item in a list based on a key. In the example below, a series of three circles with increasing radii are compared using radius as the key. The node returns the circle furthest from the origin as it has the smallest radius.",
         "index": 486
     },
     {
@@ -7274,10 +7334,14 @@
         "categories": [
             "BuiltIn"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "NormalizeDepth (list)"
+        ],
+        "imageFile": [
+            "NormalizeDepth (list)"
+        ],
         "folderPath": "BuiltIn/Action",
-        "inDepth": "Add in-depth information about NormalizeDepth (list)...",
+        "inDepth": "NormalizeDepth will return a new list of uniform depth. In the example below, a list contains two lists of unequal depth. The first list, [0], contains 6 elements. The second list [1], contains two lists each with 6 elements. Normalizing this list gives list [0] the depth of [1] by putting each of it's elements in its own list. Now both [0] and [1] have an equal depth of sub-lists.",
         "index": 489
     },
     {
@@ -7285,10 +7349,14 @@
         "categories": [
             "BuiltIn"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "NormalizeDepth (list, rank)"
+        ],
+        "imageFile": [
+            "NormalizeDepth (list, rank)"
+        ],
         "folderPath": "BuiltIn/Action",
-        "inDepth": "Add in-depth information about NormalizeDepth (list, rank)...",
+        "inDepth": "NormalizeDepth will return a new list of uniform depth to a specified rank. In the example below, a list containing two lists of unequal depth can be normalized to different ranks with an integer slider. By normalizing the depths at different ranks the list increases or decreases in depth, but is always uniform. A list of rank 1 will return single list of elements, while a list of rank 3 will return up to two more levels of sub-lists. See node NormalizeDepth (list) for a more detailed description of normalization.",
         "index": 490
     },
     {
@@ -7307,10 +7375,14 @@
         "categories": [
             "BuiltIn"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "RemoveIfNot"
+        ],
+        "imageFile": [
+            "RemoveIfNot"
+        ],
         "folderPath": "BuiltIn/Action",
-        "inDepth": "Add in-depth information about RemoveIfNot...",
+        "inDepth": "RemoveIfNot will return a list with everything removed except a specified type. In the example below, a list with only the type Line is returned by passing Line in as a string to the node.",
         "index": 492
     },
     {
@@ -7329,10 +7401,14 @@
         "categories": [
             "BuiltIn"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Reorder"
+        ],
+        "imageFile": [
+            "Reorder"
+        ],
         "folderPath": "BuiltIn/Action",
-        "inDepth": "Add in-depth information about Reorder...",
+        "inDepth": "Reorder will return a new list based on a different order of the original list's indices. In the example below, a new list is created by manually changing the index order.",
         "index": 494
     },
     {
@@ -7340,10 +7416,14 @@
         "categories": [
             "BuiltIn"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "SetDifference"
+        ],
+        "imageFile": [
+            "SetDifference"
+        ],
         "folderPath": "BuiltIn/Action",
-        "inDepth": "Add in-depth information about SetDifference...",
+        "inDepth": "SetDifference will return a new list based on the objects that one list contains and another does not. In the example below, a list of 0 to 9 counting by 1 is compared to a list of 0 to 18 counting by 2. Odd numbers below 10 are returned because they are contained in List1, but not in List2.",
         "index": 495
     },
     {
@@ -7351,10 +7431,14 @@
         "categories": [
             "BuiltIn"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "SetIntersection"
+        ],
+        "imageFile": [
+            "SetIntersection"
+        ],
         "folderPath": "BuiltIn/Action",
-        "inDepth": "Add in-depth information about SetIntersection...",
+        "inDepth": "SetIntersection will return a new list based on the objects that both lists both contain. In the example below, a list of 0 to 9 counting by 1 is compared to a list of 0 to 18 counting by 2. Even numbers below 10 are returned because they are contained in List1 and List2.",
         "index": 496
     },
     {
@@ -7362,10 +7446,14 @@
         "categories": [
             "BuiltIn"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "SetUnion"
+        ],
+        "imageFile": [
+            "SetUnion"
+        ],
         "folderPath": "BuiltIn/Action",
-        "inDepth": "Add in-depth information about SetUnion...",
+        "inDepth": "SetUnion will return a new list by combining the objects of two lists using an equality comparer. In the example below, a list of 0 to 9 counting by 1 is combined with a list of 0 to 18 counting by 2. The resulting list counts contains all elements from List1 and List2 with duplicates (0, 2, 4, etc) eliminated.",
         "index": 497
     },
     {
@@ -7373,10 +7461,14 @@
         "categories": [
             "BuiltIn"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "SortByFunction"
+        ],
+        "imageFile": [
+            "SortByFunction"
+        ],
         "folderPath": "BuiltIn/Action",
-        "inDepth": "Add in-depth information about SortByFunction...",
+        "inDepth": "SortByFunction will return a list sorted by a function. In the example below, a line is drawn through a list of randomly placed points that have been sorted with different functions. The first curve through an unsorted list is non-directional. Sorting the list using the X or Y component of each point results in two directional lines progressing across X or Y.",
         "index": 498
     },
     {
@@ -7384,10 +7476,14 @@
         "categories": [
             "BuiltIn"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "SortIndexByValue (list, ascending)"
+        ],
+        "imageFile": [
+            "SortIndexByValue (list, ascending)"
+        ],
         "folderPath": "BuiltIn/Action",
-        "inDepth": "Add in-depth information about SortIndexByValue (list, ascending)...",
+        "inDepth": "SortIndexByValue will return a list of indices sorted by their member's values, either ascending or descending. In the example below, a list of random numbers is sorted by either ascending or descending order, and a new order is returned as index values.",
         "index": 499
     },
     {
@@ -7395,10 +7491,14 @@
         "categories": [
             "BuiltIn"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "SortIndexByValue (list)"
+        ],
+        "imageFile": [
+            "SortIndexByValue (list)"
+        ],
         "folderPath": "BuiltIn/Action",
-        "inDepth": "Add in-depth information about SortIndexByValue (list)...",
+        "inDepth": "SortIndexByValue will return a list of indices sorted by their member's values in ascending order. In the example below, a list of random numbers is sorted, and a new order is returned as index values.",
         "index": 500
     },
     {
@@ -7437,10 +7537,14 @@
             "Core",
             "DateTime"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "AddTimeSpan"
+        ],
+        "imageFile": [
+            "AddTimeSpan"
+        ],
         "folderPath": "Core/DateTime/Action",
-        "inDepth": "Add in-depth information about AddTimeSpan...",
+        "inDepth": "AddTimeSpan will return a new dateTime with a timeSpan added to it. In the example below, one day and eight hours is added to the dateTime for now, returning a date that is one day and eight hours ahead.",
         "index": 503
     },
     {
@@ -7449,10 +7553,14 @@
             "Core",
             "DateTime"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "ByDate"
+        ],
+        "imageFile": [
+            "ByDate"
+        ],
         "folderPath": "Core/DateTime/Action",
-        "inDepth": "Add in-depth information about ByDate...",
+        "inDepth": "ByDate will return a dateTime from year, month, and day inputs. In the example below, a new dateTime of August 08, 2006 is created from those respective inputs.",
         "index": 504
     },
     {
@@ -7461,10 +7569,14 @@
             "Core",
             "DateTime"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "ByDateAndTime"
+        ],
+        "imageFile": [
+            "ByDateAndTime"
+        ],
         "folderPath": "Core/DateTime/Action",
-        "inDepth": "Add in-depth information about ByDateAndTime...",
+        "inDepth": "ByDateAndTime will return a dateTime from year, month, day, hour, minute, second, and millisecond inputs. In the example below, a new dateTime of August 08, 2006 4:24PM is created from those respective inputs.",
         "index": 505
     },
     {
@@ -7473,10 +7585,14 @@
             "Core",
             "DateTime"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Date"
+        ],
+        "imageFile": [
+            "Date"
+        ],
         "folderPath": "Core/DateTime/Action",
-        "inDepth": "Add in-depth information about Date...",
+        "inDepth": "Date will return only the date (year, month, day) from a dateTime. In the example below, only the date, August 08 2006, is extracted from a dateTime, August 08, 2006 4:24PM.",
         "index": 506
     },
     {
@@ -7485,10 +7601,14 @@
             "Core",
             "DateTime"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "DayOfWeek"
+        ],
+        "imageFile": [
+            "DayOfWeek"
+        ],
         "folderPath": "Core/DateTime/Action",
-        "inDepth": "Add in-depth information about DayOfWeek...",
+        "inDepth": "DayOfWeek will return only the day from a dateTime. In the example below, only the day, Tuesday, is extracted from a dateTime, August 08, 2006 4:24PM.",
         "index": 507
     },
     {
@@ -7497,10 +7617,14 @@
             "Core",
             "DateTime"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "DayOfYear"
+        ],
+        "imageFile": [
+            "DayOfYear"
+        ],
         "folderPath": "Core/DateTime/Action",
-        "inDepth": "Add in-depth information about DayOfYear...",
+        "inDepth": "DayOfYear will return the day of the year from a dateTime as a number. In the example below, the dateTime, August 08, 2006 4:24PM, is the 220 day of the year.",
         "index": 508
     },
     {
@@ -7509,10 +7633,14 @@
             "Core",
             "DateTime"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "DaysInMonth"
+        ],
+        "imageFile": [
+            "DaysInMonth"
+        ],
         "folderPath": "Core/DateTime/Action",
-        "inDepth": "Add in-depth information about DaysInMonth...",
+        "inDepth": "DaysInMonth will return the number of days in a month of a certain year. In the example below, August 2006 returns 31 days.",
         "index": 509
     },
     {
@@ -7521,10 +7649,14 @@
             "Core",
             "DateTime"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "FromString"
+        ],
+        "imageFile": [
+            "FromString"
+        ],
         "folderPath": "Core/DateTime/Action",
-        "inDepth": "Add in-depth information about FromString...",
+        "inDepth": "FromString creates a dateTime from a string. The string can contain years through milliseconds. In the example below, a dateTime of November 14, 2016 12:36PM is created from a string.",
         "index": 510
     },
     {
@@ -7533,10 +7665,14 @@
             "Core",
             "DateTime"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "IsDaylightSavingsTime"
+        ],
+        "imageFile": [
+            "IsDaylightSavingsTime"
+        ],
         "folderPath": "Core/DateTime/Action",
-        "inDepth": "Add in-depth information about IsDaylightSavingsTime...",
+        "inDepth": "IsDaylightSavingsTime will return a boolean value based on whether the dateTime falls within Daylight Savings Time. In the example below, a dateTime of November 14, 2016 12:36PM returns false.",
         "index": 511
     },
     {
@@ -7545,10 +7681,14 @@
             "Core",
             "DateTime"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "IsLeapYear"
+        ],
+        "imageFile": [
+            "IsLeapYear"
+        ],
         "folderPath": "Core/DateTime/Action",
-        "inDepth": "Add in-depth information about IsLeapYear...",
+        "inDepth": "IsLeapYear will return a boolean value based on whether a dateTime falls within a Leap Year. In the example below, a dateTime of 2016 returns true!",
         "index": 512
     },
     {
@@ -7557,10 +7697,14 @@
             "Core",
             "DateTime"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "SubtractTimeSpan"
+        ],
+        "imageFile": [
+            "SubtractTimeSpan"
+        ],
         "folderPath": "Core/DateTime/Action",
-        "inDepth": "Add in-depth information about SubtractTimeSpan...",
+        "inDepth": "SubtractTimeSpan will return a new dateTime by subtracting a timeSpan from a dateTime. In the example below, a timeSpan of one day and eight hours is subtracted from a dateTime of now, returning November 21, 2016 8:45AM.",
         "index": 513
     },
     {
@@ -7569,10 +7713,14 @@
             "Core",
             "DateTime"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "TimeOfDay"
+        ],
+        "imageFile": [
+            "TimeOfDay"
+        ],
         "folderPath": "Core/DateTime/Action",
-        "inDepth": "Add in-depth information about TimeOfDay...",
+        "inDepth": "TimeOfDay will return the time past midnight of a dateTime. In the example below, a dateTime of now returns 16:48:55 or roughly 4:48PM.",
         "index": 514
     },
     {
@@ -7581,22 +7729,30 @@
             "Core",
             "DateTime"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "MaxValue"
+        ],
+        "imageFile": [
+            "MaxValue"
+        ],
         "folderPath": "Core/DateTime/Query",
-        "inDepth": "Add in-depth information about MaxValue...",
+        "inDepth": "MaxValue will return the maximum value that a dateTime can have. In the example below, a dateTime of December 31, 9999 11:59PM is returned.",
         "index": 515
     },
     {
-        "Name": "MinValue (",
+        "Name": "MinValue",
         "categories": [
             "Core",
             "DateTime"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "MinValue"
+        ],
+        "imageFile": [
+            "MinValue"
+        ],
         "folderPath": "Core/DateTime/Query",
-        "inDepth": "Add in-depth information about MinValue (...",
+        "inDepth": "MinValue will return the minimum value that a dateTime can have. In the example below, a dateTime of January 01, 0001 12:00AM is returned.",
         "index": 516
     },
     {
@@ -7617,10 +7773,14 @@
             "Core",
             "DateTime"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Now"
+        ],
+        "imageFile": [
+            "Now"
+        ],
         "folderPath": "Core/DateTime/Query",
-        "inDepth": "Add in-depth information about Now...",
+        "inDepth": "Now will return the current system date and time. The example file below shows Now returning November 22, 2016 5:08PM.",
         "index": 518
     },
     {
@@ -7629,10 +7789,14 @@
             "Core",
             "DateTime"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Today"
+        ],
+        "imageFile": [
+            "Today"
+        ],
         "folderPath": "Core/DateTime/Query",
-        "inDepth": "Add in-depth information about Today...",
+        "inDepth": "Today will return the current date. The example file below shows Today returning November 22, 2016 12:00AM.",
         "index": 519
     },
     {
@@ -7725,10 +7889,14 @@
             "Core",
             "Evaluate"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Function.Apply"
+        ],
+        "imageFile": [
+            "Function.Apply"
+        ],
         "folderPath": "Core/Evaluate/Action",
-        "inDepth": "Add in-depth information about Function.Apply...",
+        "inDepth": "Function.Apply will return the result of a function with supplied arguments. In the example below, arguments of a point and vector are applied to a translate function returning a translated point.",
         "index": 527
     },
     {
@@ -7737,10 +7905,14 @@
             "Core",
             "Evaluate"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Function.Compose"
+        ],
+        "imageFile": [
+            "Function.Compose"
+        ],
         "folderPath": "Core/Evaluate/Action",
-        "inDepth": "Add in-depth information about Function.Compose...",
+        "inDepth": "Function.Compose will return a single function from multiple functions. In the example below, the modulus and divide functions are composed into a single function to apply to a list.",
         "index": 528
     },
     {
@@ -7749,10 +7921,14 @@
             "Core",
             "Formula"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Evaluate"
+        ],
+        "imageFile": [
+            "Evaluate"
+        ],
         "folderPath": "Core/Formula/Action",
-        "inDepth": "Add in-depth information about Evaluate...",
+        "inDepth": "Evaluate will return a result based on a supplied formula, it's parameters, and arguments. In the example below, the radius length of two circles are compared using a conditional formula to return a boolean value.",
         "index": 529
     },
     {
@@ -7797,10 +7973,14 @@
             "Core",
             "List"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Clean"
+        ],
+        "imageFile": [
+            "Clean"
+        ],
         "folderPath": "Core/List/Action",
-        "inDepth": "Add in-depth information about Clean...",
+        "inDepth": "Clean will return a list without nulls and empty lists. In the example below, a list is cleaned of two null values, returning only the integers. The preserveIndices input can be toggled by a boolean value to keep the indices that once contained nulls.",
         "index": 533
     },
     {
@@ -7809,10 +7989,14 @@
             "Core",
             "List"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "DiagonalLeft"
+        ],
+        "imageFile": [
+            "DiagonalLeft"
+        ],
         "folderPath": "Core/List/Action",
-        "inDepth": "Add in-depth information about DiagonalLeft...",
+        "inDepth": "DiagonalLeft will return a new list of lists of values along each diagonal in the matrix from top right to the lower left. In the example below, a list created by DiagonalLeft is compared to it's source list.",
         "index": 534
     },
     {
@@ -7821,10 +8005,14 @@
             "Core",
             "List"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "DiagonalRight"
+        ],
+        "imageFile": [
+            "DiagonalRight"
+        ],
         "folderPath": "Core/List/Action",
-        "inDepth": "Add in-depth information about DiagonalRight...",
+        "inDepth": "DiagonalRight will return a new list of lists of values along each diagonal in the matrix from lower right to the top left. In the example below, a list created by DiagonalRight is compared to it's source list.",
         "index": 535
     },
     {
@@ -7845,10 +8033,14 @@
             "Core",
             "Location"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "ByLatitudeAndLongitude"
+        ],
+        "imageFile": [
+            "ByLatitudeAndLongitude"
+        ],
         "folderPath": "Core/Location/Create",
-        "inDepth": "Add in-depth information about ByLatitudeAndLongitude...",
+        "inDepth": "ByLatitudeAndLongitude will return a Location from latitude and longitude values (doubles) and a name (string). In the example below, a Location for Portland, OR is created from latitude 45.5231, longitude -122.679565, and a name: Portland.",
         "index": 537
     },
     {
@@ -7857,10 +8049,14 @@
             "Core",
             "Location"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Latitude"
+        ],
+        "imageFile": [
+            "Latitude"
+        ],
         "folderPath": "Core/Location/Query",
-        "inDepth": "Add in-depth information about Latitude...",
+        "inDepth": "Latitude will return the latitude value from a Location. In the example below, a latitude of 45.5231 is returned from the Portland Location.",
         "index": 538
     },
     {
@@ -7869,10 +8065,14 @@
             "Core",
             "Location"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Longitude"
+        ],
+        "imageFile": [
+            "Longitude"
+        ],
         "folderPath": "Core/Location/Query",
-        "inDepth": "Add in-depth information about Longitude...",
+        "inDepth": "Longitude will return the longitude value from a Location. In the example below, a longitude of -122.679565 is returned from the Portland Location.",
         "index": 539
     },
     {
@@ -7881,10 +8081,14 @@
             "Core",
             "Location"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Name"
+        ],
+        "imageFile": [
+            "Name"
+        ],
         "folderPath": "Core/Location/Query",
-        "inDepth": "Add in-depth information about Name...",
+        "inDepth": "Name will return the name value from a Location. In the example below, a name of Portland is returned from the Portland Location.",
         "index": 540
     },
     {
@@ -7893,10 +8097,14 @@
             "Core",
             "Logic"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "ScopeIf"
+        ],
+        "imageFile": [
+            "ScopeIf"
+        ],
         "folderPath": "Core/Logic/Action",
-        "inDepth": "Add in-depth information about ScopeIf...",
+        "inDepth": "ScopeIf will return the input of either the True or False input depending on what boolean value is toggled in the test input. In the example file below, a large and small list of numbers is plugged into the True and False inputs. By sending the result of ScopeIfThrough a point creation node, we can toggle between two different sizes of point grids.",
         "index": 541
     },
     {
