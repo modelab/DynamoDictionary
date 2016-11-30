@@ -9275,10 +9275,14 @@
             "Geometry",
             "Geometry"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "DeserializeFromSAB"
+        ],
+        "imageFile": [
+            "DeserializeFromSAB"
+        ],
         "folderPath": "Geometry/Geometry/Action",
-        "inDepth": "Add in-depth information about DeserializeFromSAB...",
+        "inDepth": "DeserializeFromSAB will return geometry from SAB format data. In the example below, SAB format data is read from a file deserialized into a skewed cylinder.",
         "index": 619
     },
     {
@@ -9287,10 +9291,14 @@
             "Geometry",
             "Geometry"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "ExportToSAT (geometry, filePath, unitsMM)"
+        ],
+        "imageFile": [
+            "ExportToSAT (geometry, filePath, unitsMM)"
+        ],
         "folderPath": "Geometry/Geometry/Action",
-        "inDepth": "Add in-depth information about ExportToSAT (geometry, filePath, unitsMM)...",
+        "inDepth": "ExportToSAT (geometry, filePath, unitsMM) will return a .SAT file at the specified file path with specified units. In the example below, a cylinder is exported to a file path of C:\\_REFERENCE\exportsample.sat with millimeters as its units. ",
         "index": 620
     },
     {
@@ -9299,10 +9307,14 @@
             "Geometry",
             "Geometry"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "SerializeAsSAB (geometry)"
+        ],
+        "imageFile": [
+            "SerializeAsSAB (geometry)"
+        ],
         "folderPath": "Geometry/Geometry/Action",
-        "inDepth": "Add in-depth information about SerializeAsSAB (geometry)...",
+        "inDepth": "SerializeAsSAB (geometry) will return a list of SAB format data. In the example below, a cylinder is returned as data and shown in a Watch node.",
         "index": 621
     },
     {
@@ -9311,10 +9323,14 @@
             "Geometry",
             "Geometry"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "BoundingBox"
+        ],
+        "imageFile": [
+            "BoundingBox"
+        ],
         "folderPath": "Geometry/Geometry/Query",
-        "inDepth": "Add in-depth information about BoundingBox...",
+        "inDepth": "BoundingBox will return a box that contains a piece of geometry. Though the BoundingBox isn't displayed, it is defined by a MinPoint, MaxPoint, and several other parameters.In the example below, a BoundingBox is created for a cylinder and represented as a PolySurface.",
         "index": 622
     },
     {
@@ -9326,7 +9342,7 @@
         "dynFile": [],
         "imageFile": [],
         "folderPath": "Geometry/Geometry/Query",
-        "inDepth": "Add in-depth information about ContextCoordinateSystem...",
+        "inDepth": "ContextCoordinateSystem will return the CoordinateSystem that was used in creating a piece of geometry. In the example below, a cylinder created at centerPoint (3,0,0) returns a CoordinateSystem located at the origin.",
         "index": 623
     },
     {
@@ -9335,10 +9351,14 @@
             "Geometry",
             "IndexGroup"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "ByIndices (a, b, c, d) (a, b, c, d) (a, b, c, d)"
+        ],
+        "imageFile": [
+            "ByIndices (a, b, c, d) (a, b, c, d) (a, b, c, d)"
+        ],
         "folderPath": "Geometry/IndexGroup/Create",
-        "inDepth": "Add in-depth information about ByIndices (a, b, c, d) (a, b, c, d) (a, b, c, d)...",
+        "inDepth": "ByIndices (a, b, c, d) (a, b, c, d) (a, b, c, d) will return an IndexGroup of four Indices used to created a four-sided Mesh. In the example below, IndexGroup defines the four indices used to create a four-sided Mesh with Mesh.ByPointsFacesIndices.",
         "index": 624
     },
     {
@@ -9347,10 +9367,14 @@
             "Geometry",
             "IndexGroup"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "ByIndices (a, b, c) (a, b, c)"
+        ],
+        "imageFile": [
+            "ByIndices (a, b, c) (a, b, c)"
+        ],
         "folderPath": "Geometry/IndexGroup/Create",
-        "inDepth": "Add in-depth information about ByIndices (a, b, c) (a, b, c)...",
+        "inDepth": "ByIndices (a, b, c) (a, b, c) will return an IndexGroup of three Indices used to created a three-sided Mesh. In the example below, IndexGroup defines the three indices used to create a three-sided Mesh with Mesh.ByPointsFacesIndices.",
         "index": 625
     },
     {
@@ -9359,10 +9383,14 @@
             "Geometry",
             "IndexGroup"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "A"
+        ],
+        "imageFile": [
+            "A"
+        ],
         "folderPath": "Geometry/IndexGroup/Query",
-        "inDepth": "Add in-depth information about A...",
+        "inDepth": "A will return the value of Index A. In the example below, the Index value of A is returned as 0 in a three-sided Mesh.",
         "index": 626
     },
     {
@@ -9371,10 +9399,14 @@
             "Geometry",
             "IndexGroup"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "B"
+        ],
+        "imageFile": [
+            "B"
+        ],
         "folderPath": "Geometry/IndexGroup/Query",
-        "inDepth": "Add in-depth information about B...",
+        "inDepth": "B will return the value of Index B. In the example below, the Index value of B is returned as 1 in a three-sided Mesh.",
         "index": 627
     },
     {
@@ -9383,10 +9415,14 @@
             "Geometry",
             "IndexGroup"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "C"
+        ],
+        "imageFile": [
+            "C"
+        ],
         "folderPath": "Geometry/IndexGroup/Query",
-        "inDepth": "Add in-depth information about C...",
+        "inDepth": "C will return the value of Index C. In the example below, the Index value of C is returned as 2 in a three-sided Mesh.",
         "index": 628
     },
     {
@@ -9395,10 +9431,14 @@
             "Geometry",
             "IndexGroup"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "D"
+        ],
+        "imageFile": [
+            "D"
+        ],
         "folderPath": "Geometry/IndexGroup/Query",
-        "inDepth": "Add in-depth information about D...",
+        "inDepth": "D will return the value of Index D. In the example below, the Index value of D is returned as 3 in a four-sided Mesh.",
         "index": 629
     },
     {
@@ -9407,10 +9447,14 @@
             "Geometry",
             "Mesh"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "ByPointsFaceIndices"
+        ],
+        "imageFile": [
+            "ByPointsFaceIndices"
+        ],
         "folderPath": "Geometry/Mesh/Create",
-        "inDepth": "Add in-depth information about ByPointsFaceIndices...",
+        "inDepth": "ByPointsFaceIndices will return a Mesh based on a collection of vertices as Points and indices. In the example below, a four-sided Mesh is created with four Points and an IndexGroup of four indices.",
         "index": 630
     },
     {
@@ -9419,10 +9463,14 @@
             "Geometry",
             "Mesh"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "FaceIndices"
+        ],
+        "imageFile": [
+            "FaceIndices"
+        ],
         "folderPath": "Geometry/Mesh/Query",
-        "inDepth": "Add in-depth information about FaceIndices...",
+        "inDepth": "FaceIndices will return the an IndexGroup or vertices that make up the mesh face in counterclockwise order. In the example below, the an Indexgroup is returned for a four-sided mesh face.",
         "index": 631
     },
     {
@@ -9431,10 +9479,14 @@
             "Geometry",
             "Mesh"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "VertexNormals"
+        ],
+        "imageFile": [
+            "VertexNormals"
+        ],
         "folderPath": "Geometry/Mesh/Query",
-        "inDepth": "Add in-depth information about VertexNormals...",
+        "inDepth": "VertexNormals will return Vectors that represent the normal of each Vertex. In the example below, the normal of each Vertex is returned as a line to represent its direction.",
         "index": 632
     },
     {
@@ -9443,10 +9495,14 @@
             "Geometry",
             "Mesh"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "VertexPositions"
+        ],
+        "imageFile": [
+            "VertexPositions"
+        ],
         "folderPath": "Geometry/Mesh/Query",
-        "inDepth": "Add in-depth information about VertexPositions...",
+        "inDepth": "VertexPositions will return a Mesh face's Vertex positions as Points. In the example below, the Vertex positions of a four-sided Mesh face are returned as Points.",
         "index": 633
     },
     {
@@ -9467,10 +9523,14 @@
             "Geometry",
             "NurbsSurface"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "UKnots"
+        ],
+        "imageFile": [
+            "UKnots"
+        ],
         "folderPath": "Geometry/NurbsSurface/Action",
-        "inDepth": "Add in-depth information about UKnots...",
+        "inDepth": "UKnots will return the Surface Knots in the U direction of a NurbsSurface. In the example below, the UKnots of the NurbsSurface are returned as a list of doubles.",
         "index": 635
     },
     {
@@ -9479,10 +9539,14 @@
             "Geometry",
             "NurbsSurface"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "VKnots"
+        ],
+        "imageFile": [
+            "VKnots"
+        ],
         "folderPath": "Geometry/NurbsSurface/Action",
-        "inDepth": "Add in-depth information about VKnots...",
+        "inDepth": "VKnots will return the Surface Knots in the V direction of a NurbsSurface. In the example below, the VKnots of the NurbsSurface are returned as a list of doubles.",
         "index": 636
     },
     {
@@ -9491,10 +9555,14 @@
             "Geometry",
             "NurbsSurface"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "DegreeU"
+        ],
+        "imageFile": [
+            "DegreeU"
+        ],
         "folderPath": "Geometry/NurbsSurface/Query",
-        "inDepth": "Add in-depth information about DegreeU...",
+        "inDepth": "DegreeU will return the degree of a NurbsSurface in the U direction. In the example below, a NurbsSurface created with Points and specified U/V degrees has a degree of 2 in the U direction. Adjusting the number sliders will change the U and V degrees.",
         "index": 637
     },
     {
@@ -9503,10 +9571,14 @@
             "Geometry",
             "NurbsSurface"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "DegreeV"
+        ],
+        "imageFile": [
+            "DegreeV"
+        ],
         "folderPath": "Geometry/NurbsSurface/Query",
-        "inDepth": "Add in-depth information about DegreeV...",
+        "inDepth": "DegreeV will return the degree of a NurbsSurface in the V direction. In the example below, a NurbsSurface created with Points and specified U/V degrees has a degree of 2 in the V direction. Adjusting the number sliders will change the U and V degrees.",
         "index": 638
     },
     {
@@ -9539,10 +9611,14 @@
             "Geometry",
             "NurbsSurface"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "NumControlPointsU"
+        ],
+        "imageFile": [
+            "NumControlPointsU"
+        ],
         "folderPath": "Geometry/NurbsSurface/Query",
-        "inDepth": "Add in-depth information about NumControlPointsU...",
+        "inDepth": "NumControlPointsU will count the control points in the U direction of a NurbsSurface and return an integer. In the example below, the NurbsSurface returns an integer of 22 for its U control points. The control points are returned as Points using NurbsSurface.ControlPoints.",
         "index": 641
     },
     {
@@ -9551,10 +9627,14 @@
             "Geometry",
             "NurbsSurface"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "NumControlPointsV"
+        ],
+        "imageFile": [
+            "NumControlPointsV"
+        ],
         "folderPath": "Geometry/NurbsSurface/Query",
-        "inDepth": "Add in-depth information about NumControlPointsV...",
+        "inDepth": "NumControlPointsV will count the control points in the V direction of a NurbsSurface and return an integer. In the example below, the NurbsSurface returns an integer of 12 for its V control points. The control points are returned as Points using NurbsSurface.ControlPoints.",
         "index": 642
     },
     {
@@ -9563,10 +9643,14 @@
             "Geometry",
             "Point"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "ByCoordinates (x, y, z)"
+        ],
+        "imageFile": [
+            "ByCoordinates (x, y, z)"
+        ],
         "folderPath": "Geometry/Point/Create",
-        "inDepth": "Add in-depth information about ByCoordinates (x, y, z)...",
+        "inDepth": "ByCoordinates (x, y, z) will return a Point from X, Y, and Z values. In the example below, a Point is created with coordinate values of 2 for X, 3 for Y, and 4 for Z.",
         "index": 643
     },
     {
@@ -9575,10 +9659,14 @@
             "Geometry",
             "PolyCurve"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "CloseWithLineAndTangentArcs"
+        ],
+        "imageFile": [
+            "CloseWithLineAndTangentArcs"
+        ],
         "folderPath": "Geometry/PolyCurve/Action",
-        "inDepth": "Add in-depth information about CloseWithLineAndTangentArcs...",
+        "inDepth": "CloseWithLineAndTangentArcs will return a line and tangent arcs to close an open PolyCurve. In the example below, a Polycurve with two segments is closed with a line and arcs. The arcs are defined by whether they are at the start or end of the new line, and their radii can be controlled independently.",
         "index": 644
     },
     {
@@ -9587,10 +9675,14 @@
             "Geometry",
             "PolyCurve"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "ExtendWithEllipse"
+        ],
+        "imageFile": [
+            "ExtendWithEllipse"
+        ],
         "folderPath": "Geometry/PolyCurve/Action",
-        "inDepth": "Add in-depth information about ExtendWithEllipse...",
+        "inDepth": "ExtendWithEllipse will return an extension of a PolyCurve as a portion of an ellipse. In the example below, a PolyCurve with a single segment is extended into an ellipse. The extension is controlled by two radii, it's length, its end parameter, and whether the start or end of the PolyCurve is being extended.",
         "index": 645
     },
     {
@@ -9599,10 +9691,14 @@
             "Geometry",
             "PolySurface"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "ByLoftGuides"
+        ],
+        "imageFile": [
+            "ByLoftGuides"
+        ],
         "folderPath": "Geometry/PolySurface/Create",
-        "inDepth": "Add in-depth information about ByLoftGuides...",
+        "inDepth": "ByLoftGuides will return a PolySurface by lofting through a list of PolyCurves (crossSections). In the example below, a PolySurface is created by lofting through three arcs and a curved guideCurve. The arcs give the loft its cross section, and the guideCurve gives the loft a rail to follow.",
         "index": 646
     },
     {
@@ -9611,10 +9707,14 @@
             "Geometry",
             "PolySurface"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "BySolid
+        ],
+        "imageFile": [
+            "BySolid
+        ],
         "folderPath": "Geometry/PolySurface/Create",
-        "inDepth": "Add in-depth information about BySolid...",
+        "inDepth": "BySolid will return a PolySurface from a Solid. In the example below, a Solid is returned as a PolySurface to make it work with the Display.BySurfaceColors node.",
         "index": 647
     },
     {
@@ -9623,10 +9723,14 @@
             "Geometry",
             "PolySurface"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "BySweep (rail, crossSection)"
+        ],
+        "imageFile": [
+            "BySweep (rail, crossSection)"
+        ],
         "folderPath": "Geometry/PolySurface/Create",
-        "inDepth": "Add in-depth information about BySweep (rail, crossSection)...",
+        "inDepth": "BySweep (rail, crossSection) will return a PolySurface by sweeping a cross section along a rail. In the example below, a Line and an Arc form a cross section to sweep along an Arc. The crossSection input is capable of receiving a list of connected Curves. If they don't meet at a start or end point, the node will not return a PolySurface. This node is similar to BySweep (rail, profile) with the only difference being that crossSection takes a list of Curves while profile only takes one.",
         "index": 648
     },
     {
@@ -9635,10 +9739,14 @@
             "Geometry",
             "PolySurface"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "BySweep (rail, profile)"
+        ],
+        "imageFile": [
+            "BySweep (rail, profile)"
+        ],
         "folderPath": "Geometry/PolySurface/Create",
-        "inDepth": "Add in-depth information about BySweep (rail, profile)...",
+        "inDepth": "BySweep (rail, profile) will return a PolySurface by sweeping a profile along a rail. In the example below, an Arc is swept along another Arc as its rail.",
         "index": 649
     },
     {
@@ -9647,10 +9755,14 @@
             "Geometry",
             "PolySurface"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "EdgeCount"
+        ],
+        "imageFile": [
+            "EdgeCount" 
+        ],
         "folderPath": "Geometry/PolySurface/Action",
-        "inDepth": "Add in-depth information about EdgeCount...",
+        "inDepth": "EdgeCount will return the number of Edges in a PolySurface. In the example below, an extruded hexagon has an Edge count of 18. The edges are represented as Lines.",
         "index": 650
     },
     {
@@ -9659,10 +9771,14 @@
             "Geometry",
             "PolySurface"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "ExtractSolids"
+        ],
+        "imageFile": [
+            "ExtractSolids"
+        ],
         "folderPath": "Geometry/PolySurface/Action",
-        "inDepth": "Add in-depth information about ExtractSolids...",
+        "inDepth": "ExtractSolids will return a Solid from a collection of PolySurfaces. In the example below, a Solid is returned from a collection of three surfaces that form a cylinder. Since the node takes a single PolySurface as an input, it was necessary to join the three surfaces together before extracting a Solid.",
         "index": 651
     },
     {
@@ -9671,10 +9787,14 @@
             "Geometry",
             "PolySurface"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "LocateSurfacesByLine"
+        ],
+        "imageFile": [
+            "LocateSurfacesByLine"
+        ],
         "folderPath": "Geometry/PolySurface/Action",
-        "inDepth": "Add in-depth information about LocateSurfacesByLine...",
+        "inDepth": "LocateSurfacesByLine will return all Surface(s) that a Line intersects. In the example below, a line is found to pass through an extruded hexagon at two places and returns two Surfaces. ",
         "index": 652
     },
     {
@@ -9683,10 +9803,14 @@
             "Geometry",
             "PolySurface"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "LocateSurfacesByPoint"
+        ],
+        "imageFile": [
+            "LocateSurfacesByPoint"
+        ],
         "folderPath": "Geometry/PolySurface/Action",
-        "inDepth": "Add in-depth information about LocateSurfacesByPoint...",
+        "inDepth": "LocateSurfacesByPoint will return the first Surface intersected in the forward direction. The direction is defined by a Vector. In the example below, a Surface is returned that is intersected by a Vector originating at the Point. The Vector is represented as a Line.",
         "index": 653
     },
     {
@@ -9695,10 +9819,14 @@
             "Geometry",
             "PolySurface"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "SurfaceCount"
+        ],
+        "imageFile": [
+            "SurfaceCount"
+        ],
         "folderPath": "Geometry/PolySurface/Action",
-        "inDepth": "Add in-depth information about SurfaceCount...",
+        "inDepth": "SurfaceCount will return the number of Surfaces in a PolySurface as an integer. In the example below, a hexagon extruded as a Solid returns a count of 8. The node takes a single PolySurface as an input, so a collection of Surfaces will need to be joined before counting.",
         "index": 654
     },
     {
@@ -9707,10 +9835,14 @@
             "Geometry",
             "PolySurface"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Surfaces"
+        ],
+        "imageFile": [
+            "Surfaces"
+        ],
         "folderPath": "Geometry/PolySurface/Action",
-        "inDepth": "Add in-depth information about Surfaces...",
+        "inDepth": "Surfaces will return the Surfaces that make up a PolySurface. In the example below, a hexagon extruded as a solid will return eight individual Surfaces.",
         "index": 655
     },
     {
@@ -9719,10 +9851,14 @@
             "Geometry",
             "PolySurface"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "UnconnectedBoundaries"
+        ],
+        "imageFile": [
+            "UnconnectedBoundaries"
+        ],
         "folderPath": "Geometry/PolySurface/Action",
-        "inDepth": "Add in-depth information about UnconnectedBoundaries...",
+        "inDepth": "UnconnectedBoundaries will return PolyCurves that represent boundaries unconnected to other Surfaces. In the example below, an extruded hexagon returns it's top and bottom boundaries as PolyCurves since they are open.",
         "index": 656
     },
     {
@@ -9731,10 +9867,14 @@
             "Geometry",
             "PolySurface"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "VertexCount"
+        ],
+        "imageFile": [
+            "VertexCount"
+        ],
         "folderPath": "Geometry/PolySurface/Action",
-        "inDepth": "Add in-depth information about VertexCount...",
+        "inDepth": "VertexCount will return the number of Vertices of a PolySurface as an integer. In the example below, a solid, extruded hexagon returns a Vertice count of 12. The Vertices are represented as Points.",
         "index": 657
     },
     {
@@ -9743,10 +9883,14 @@
             "Geometry",
             "Sphere"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "ByFourPoints"
+        ],
+        "imageFile": [
+            "ByFourPoints"
+        ],
         "folderPath": "Geometry/Sphere/Create",
-        "inDepth": "Add in-depth information about ByFourPoints...",
+        "inDepth": "ByFourPoints will return a Sphere from four input Points on the Surface. In the example below, two Spheres are created from a collection of six Points. Adjusting the X Position and Y Position sliders will change the size of each Sphere relative to the other. It is important to note that not any collection of four points will make a Sphere. It has to be possible for all Points to be on the Sphere's surface.",
         "index": 658
     },
     {
@@ -9755,10 +9899,14 @@
             "Geometry",
             "Surface"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Join (surface, otherSurfaces)"
+        ],
+        "imageFile": [
+            "Join (surface, otherSurfaces)"
+        ],
         "folderPath": "Geometry/Surface/Action",
-        "inDepth": "Add in-depth information about Join (surface, otherSurfaces)...",
+        "inDepth": "Join (surface, otherSurfaces) will return a single PolySurface by joining one Surface will a collection of others. In the example below, an extruded Surface is joined with a Surface that matches it's profile returning a single PolySurface.",
         "index": 659
     },
     {
@@ -9779,10 +9927,14 @@
             "Geometry",
             "Surface"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "TrimWithEdgeLoops"
+        ],
+        "imageFile": [
+            "TrimWithEdgeLoops"
+        ],
         "folderPath": "Geometry/Surface/Action",
-        "inDepth": "Add in-depth information about TrimWithEdgeLoops...",
+        "inDepth": "TrimWithEdgeLoops will return a new Surface trimmed from an input Surface. In the example below, two loops are trimmed out of a Surface, returning two new Surfaces highlighted in blue. The number slider will adjust the shape of the new Surfaces. The loops input will take a single PolyCurve or a list of them.",
         "index": 661
     },
     {
@@ -9791,10 +9943,14 @@
             "Geometry",
             "Surface"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Closed"
+        ],
+        "imageFile": [
+            "Closed"
+        ],
         "folderPath": "Geometry/Surface/Query",
-        "inDepth": "Add in-depth information about Closed...",
+        "inDepth": "Closed will return a boolean value based on whether a Surface is closed in it's U or V directions. In the example below, two extruded Surfaces are tested, and the extruded circle returns true. By adjusting the number slider, the extruded arc will close into a circle and also return true.",
         "index": 662
     },
     {
@@ -9803,10 +9959,14 @@
             "Geometry",
             "Surface"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "ClosedInU"
+        ],
+        "imageFile": [
+            "ClosedInU"
+        ],
         "folderPath": "Geometry/Surface/Query",
-        "inDepth": "Add in-depth information about ClosedInU...",
+        "inDepth": "ClosedInU will return a boolean value based on whether a Surface is closed in it's U directions. In the example below, an extruded circle that is closed in one direction returns false for being closed in U.",
         "index": 663
     },
     {
@@ -9815,10 +9975,14 @@
             "Geometry",
             "Surface"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "ClosedInV"
+        ],
+        "imageFile": [
+            "ClosedInV"
+        ],
         "folderPath": "Geometry/Surface/Query",
-        "inDepth": "Add in-depth information about ClosedInV...",
+        "inDepth": "ClosedInV will return a boolean value based on whether a Surface is closed in it's V directions. In the example below, an extruded circle that is closed in one direction returns true for being closed in V",
         "index": 664
     },
     {
@@ -9827,10 +9991,14 @@
             "Geometry",
             "Surface"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Perimeter"
+        ],
+        "imageFile": [
+            "Perimeter"
+        ],
         "folderPath": "Geometry/Surface/Query",
-        "inDepth": "Add in-depth information about Perimeter...",
+        "inDepth": "Perimeter will return the length of a Surface's perimeter as a double. In the example below, a complex NurbsSurface's perimeter returns a value of ~36.432.",
         "index": 665
     },
     {
@@ -9840,10 +10008,14 @@
             "Tessellation",
             "Delaunay"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "ByParametersOnSurface"
+        ],
+        "imageFile": [
+            "ByParametersOnSurface"
+        ],
         "folderPath": "Geometry/Tessellation/Delaunay/Action",
-        "inDepth": "Add in-depth information about ByParametersOnSurface...",
+        "inDepth": "ByParametersOnSurface will return a Delaunay triangulation of an input Surface. In the example below, a Delaunay triangulation of a NurbsSurface is returned with a UV count of 400. Increasing the UV count will create a better approximation of the underlying Surface but with more triangles.",
         "index": 666
     },
     {
@@ -9852,10 +10024,14 @@
             "Geometry",
             "Topology"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Faces"
+        ],
+        "imageFile": [
+            "Faces"
+        ],
         "folderPath": "Geometry/Topology/Query",
-        "inDepth": "Add in-depth information about Faces...",
+        "inDepth": "Faces will return a list of Faces that make up a Topology. In the example below, two chamfered PolySurfaces each return a list of Faces with one being longer as it was chamfered twice.",
         "index": 667
     },
     {
@@ -9864,10 +10040,14 @@
             "Geometry",
             "UV"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "ByCoordinates"
+        ],
+        "imageFile": [
+            "ByCoordinates"
+        ],
         "folderPath": "Geometry/UV/Create",
-        "inDepth": "Add in-depth information about ByCoordinates...",
+        "inDepth": "ByCoordinates will return a UV from two doubles or two lists of doubles. In the example below, a UV is returned from 400 random values to create a Delaunay triangulation of a NurbsSurface.",
         "index": 668
     },
     {
@@ -9876,10 +10056,14 @@
             "Geometry",
             "UV"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "U"
+        ],
+        "imageFile": [
+            "U"
+        ],
         "folderPath": "Geometry/UV/Query",
-        "inDepth": "Add in-depth information about U...",
+        "inDepth": "U will return the U value of a UV coordinate. In the example below, the U value of a Point on a NurbsSurface is returned from a UV parameter at a Point on a NurbsSurface. The UV parameter is returned from the Surface.UVParamterAtPoint node.",
         "index": 669
     },
     {
@@ -9888,10 +10072,14 @@
             "Geometry",
             "UV"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "V"
+        ],
+        "imageFile": [
+            "V"
+        ],
         "folderPath": "Geometry/UV/Query",
-        "inDepth": "Add in-depth information about V...",
+        "inDepth": "V will return the V value of a UV coordinate. In the example below, the V value of a Point on a NurbsSurface is returned from a UV parameter at a Point on a NurbsSurface. The UV parameter is returned from the Surface.UVParamterAtPoint node.",
         "index": 670
     },
     {
@@ -9900,10 +10088,14 @@
             "Geometry",
             "Vector"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "ByCoordinates (x, y, z, normalized)"
+        ],
+        "imageFile": [
+            "ByCoordinates (x, y, z, normalized)"
+        ],
         "folderPath": "Geometry/Vector/Create",
-        "inDepth": "Add in-depth information about ByCoordinates (x, y, z, normalized)...",
+        "inDepth": "ByCoordinates (x, y, z, normalized) will return a Vector from coordinate values and a normalize boolean toggle. In the example below, a Vector is returned that can be either normalized or not which affects it's length. A Line is created with the Vector to show the length change when toggling normalize.",
         "index": 671
     },
     {
