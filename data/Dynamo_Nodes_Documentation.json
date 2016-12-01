@@ -7035,10 +7035,14 @@
         "categories": [
             "BuiltIn"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Contains (list, element)"
+        ],
+        "imageFile": [
+            "Contains (list, element)"
+        ],
         "folderPath": "BuiltIn/Action",
-        "inDepth": "Add in-depth information about Contains (list, element)...",
+        "inDepth": "Contains (list, element) will return a boolean value based on whether a List contains an input element. In the example below, a List containing a number sequence from 0 to 18 returns true for containing 12.",
         "index": 468
     },
     {
@@ -7046,10 +7050,14 @@
         "categories": [
             "BuiltIn"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "ContainsKey"
+        ],
+        "imageFile": [
+            "ContainsKey"
+        ],
         "folderPath": "BuiltIn/Action",
-        "inDepth": "Add in-depth information about ContainsKey...",
+        "inDepth": "ContainsKey will return a boolean value depending on whether a List contains an input key. In the example below, a List containing 10 numbers returns false for containing the Index value of 12.",
         "index": 469
     },
     {
@@ -7094,7 +7102,7 @@
             "Equals"
         ],
         "folderPath": "BuiltIn/Action",
-        "inDepth": "Equals will return a boolean value that is true if ObjectA is equal to ObjectB. In this example file,  the radii (doubles) of two circles are compared.",
+        "inDepth": "Equals will return a boolean value that is true if ObjectA is equal to ObjectB. In the example below, the radii (doubles) of two circles are compared. Adjusting the sliders can change the circles' radii, making them equal or unequal.",
         "index": 472
     },
     {
@@ -7109,7 +7117,7 @@
             "GetKeys"
         ],
         "folderPath": "BuiltIn/Action",
-        "inDepth": "GetKeys will return the keys (index values) of an input list as a new list. In this example file, the keys from a simple list of numbers are extracted as their own list.",
+        "inDepth": "GetKeys will return the keys (index values) of an input list as a new list. In the example below, the keys from a simple list of numbers are extracted as their own list.",
         "index": 473
     },
     {
@@ -7124,7 +7132,7 @@
             "GetValues"
         ],
         "folderPath": "BuiltIn/Action",
-        "inDepth": "GetValues will return the values in a list as a new list. In this example file, a simple list of numbers is returned in a new list.",
+        "inDepth": "GetValues will return the values in a list as a new list. In the example below, a simple list of numbers is returned in a new list.",
         "index": 474
     },
     {
@@ -7154,7 +7162,7 @@
             "ImportFromCSV (filePath, transpose)"
         ],
         "folderPath": "BuiltIn/Action",
-        "inDepth": "ImportFromCSV will return the contents of a CSV (Comma Separated Value) file as a list of lists with the ability to transpose the list (swap columns with rows). In the example below, imported values from the a sample CSV are used to define the Z translation distance of a grid of points. The list structure of the imported values (list of lists) corresponds to list structure of the point grid. Switching the boolean value for transpose will use different values from the CSV for translation distances.",
+        "inDepth": "ImportFromCSV will return the contents of a CSV (Comma Separated Value) file as a list of lists with the ability to transpose the list (swap columns with rows). In the example below, imported values from a sample CSV are used to define the Z translation distance of a grid of points. The list structure of the imported values (list of lists) corresponds to the list structure of the point grid. Switching the boolean value for transpose will use different values from the CSV for translation distances. Each row of the CSV becomes a list.",
         "index": 476
     },
     {
@@ -7169,7 +7177,7 @@
             "ImportFromCSV (filePath)"
         ],
         "folderPath": "BuiltIn/Action",
-        "inDepth": "ImportFromCSV will return the contents of a CSV (Comma Separated Value) file as a list of lists. In the example below, imported values from the a sample CSV are used to define the Z translation distance of a grid of points. The list structure of the imported values (list of lists) corresponds to list structure of the point grid.",
+        "inDepth": "ImportFromCSV will return the contents of a CSV (Comma Separated Value) file as a list of lists. In the example below, imported values from the a sample CSV are used to define the Z translation distance of a grid of points. The list structure of the imported values (list of lists) corresponds to list structure of the point grid. Each row of the CSV becomes a list.",
         "index": 477
     },
     {
@@ -7184,7 +7192,7 @@
             "Insert (list, element, index)"
         ],
         "folderPath": "BuiltIn/Action",
-        "inDepth": "Insert will insert multiple elements into a list at a specified index. In the example below, we start with a list of numbers and add multiple elements at a certain index. The new elements are inserted at the specified index as a list within the existing list.",
+        "inDepth": "Insert will insert multiple elements into a list at a specified index. In the example below, a list of two strings \"Hello\" and \"List\" are inserted at index value 2. The indices .",
         "index": 478
     },
     {
@@ -10104,10 +10112,14 @@
             "Geometry",
             "Vector"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "ByTwoPoints"
+        ],
+        "imageFile": [
+            "ByTwoPoints"
+        ],
         "folderPath": "Geometry/Vector/Create",
-        "inDepth": "Add in-depth information about ByTwoPoints...",
+        "inDepth": "ByTwoPoints will return a Vector defined by two Point locations. In the example below, a Vector created between two Points is represented by a Line. The Vector's length is 3, equal to the distance between Points.",
         "index": 672
     },
     {
@@ -10116,10 +10128,14 @@
             "Geometry",
             "Vector"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "AngleAboutAxis"
+        ],
+        "imageFile": [
+            "AngleAboutAxis"
+        ],
         "folderPath": "Geometry/Vector/Action",
-        "inDepth": "Add in-depth information about AngleAboutAxis...",
+        "inDepth": "AngleAboutAxis will return the angle measurement between two Vectors in degrees from 0 to 360 and about an axis of rotation. In the example below, the angle between two Vectors is measured about the Z axis. Adjust Z Elevation and Rotation Degrees sliders to see how they affect the resulting angle measurement. The Vectors are represented as Lines.",
         "index": 673
     },
     {
@@ -10128,10 +10144,14 @@
             "Geometry",
             "Vector"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "AngleWithVector"
+        ],
+        "imageFile": [
+            "AngleWithVector"
+        ],
         "folderPath": "Geometry/Vector/Action",
-        "inDepth": "Add in-depth information about AngleWithVector...",
+        "inDepth": "AngleWithVector will return the angle measurement between two Vectors in degrees from 0 to 180. In the example below, an angle measurement is returned for two Vectors. Adjust Z Elevation and Rotation Degrees sliders to see how they affect the resulting angle measurement. The Vectors are represented as Lines.",
         "index": 674
     },
     {
@@ -10140,10 +10160,14 @@
             "Geometry",
             "Vector"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "AsPoint"
+        ],
+        "imageFile": [
+            "AsPoint"
+        ],
         "folderPath": "Geometry/Vector/Action",
-        "inDepth": "Add in-depth information about AsPoint...",
+        "inDepth": "AsPoint will return a Point at the coordinate values of a Vector. In the example below, a Point is returned from the Vector.ByCoordinates node at (10,5,6).",
         "index": 675
     },
     {
@@ -10152,10 +10176,14 @@
             "Geometry",
             "Vector"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Cross"
+        ],
+        "imageFile": [
+            "Cross"
+        ],
         "folderPath": "Geometry/Vector/Action",
-        "inDepth": "Add in-depth information about Cross...",
+        "inDepth": "Cross will return the cross product of two Vectors. In the example below, the cross product of two Vectors results in a new Vector. The Vectors are represented as Lines.",
         "index": 676
     },
     {
@@ -10164,10 +10192,14 @@
             "Geometry",
             "Vector"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Dot"
+        ],
+        "imageFile": [
+            "Dot"
+        ],
         "folderPath": "Geometry/Vector/Action",
-        "inDepth": "Add in-depth information about Dot...",
+        "inDepth": "Dot will return the dot product of two Vectors as a double. In the example below, Vectors of (10,5,6) and (1,10,1) return a dot product of 66.",
         "index": 677
     },
     {
@@ -10176,10 +10208,14 @@
             "Geometry",
             "Vector"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "IsParallel"
+        ],
+        "imageFile": [
+            "IsParallel"
+        ],
         "folderPath": "Geometry/Vector/Action",
-        "inDepth": "Add in-depth information about IsParallel...",
+        "inDepth": "IsParallel will return a boolean value based on whether a Vector is parallel to another Vector. In the example below, two Vectors represented as Lines are compared. Adjust the slider to rotate the Vector in and out of parallel with the other.",
         "index": 678
     },
     {
@@ -10188,10 +10224,14 @@
             "Geometry",
             "Vector"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Normalized"
+        ],
+        "imageFile": [
+            "Normalized"
+        ],
         "folderPath": "Geometry/Vector/Action",
-        "inDepth": "Add in-depth information about Normalized...",
+        "inDepth": "Normalized will return a normalized Vector. The Vector returned will have a length of 1 regardless of its original length. In the example below, a Vector of length ~1.4142 is normalized to a length of 1.",
         "index": 679
     },
     {
@@ -10200,10 +10240,14 @@
             "Geometry",
             "Vector"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Rotate (vector, origin, degrees)"
+        ],
+        "imageFile": [
+            "Rotate (vector, origin, degrees)"
+        ],
         "folderPath": "Geometry/Vector/Action",
-        "inDepth": "Add in-depth information about Rotate (vector, origin, degrees)...",
+        "inDepth": "Rotate (vector, origin, degrees) will return a new Vector rotated about the normal of a Plane. In the example below, a Vector represented as a Line is rotated about the normal of the XZ Plane. Try plugging in different Planes for different rotation axes.",
         "index": 680
     },
     {
@@ -10212,10 +10256,14 @@
             "Geometry",
             "Vector"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Rotate (vector, axis, degrees)"
+        ],
+        "imageFile": [
+            "Rotate (vector, axis, degrees)"
+        ],
         "folderPath": "Geometry/Vector/Action",
-        "inDepth": "Add in-depth information about Rotate (vector, axis, degrees)...",
+        "inDepth": "Rotate (vector, axis, degrees) will return a new Vector rotated about an input axis. In the example below, a Vector represented as a Line is rotated about a Z axis Vector. Try plugging in different Vectors for different rotation axes.",
         "index": 681
     },
     {
@@ -10224,10 +10272,14 @@
             "Geometry",
             "Vector"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Scale (vector, scale_factor)"
+        ],
+        "imageFile": [
+            "Scale (vector, scale_factor)"
+        ],
         "folderPath": "Geometry/Vector/Action",
-        "inDepth": "Add in-depth information about Scale (vector, scale_factor)...",
+        "inDepth": "Scale (vector, scale_factor) will return a new Vector scaled by a factor. In the example below, a Vector of length 1.732 is scaled to 12.471 from a factor of 7.2.",
         "index": 682
     },
     {
@@ -10236,10 +10288,14 @@
             "Geometry",
             "Vector"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Scale (vector, xScaleFactor, yScaleFactor, zScaleFactor)"
+        ],
+        "imageFile": [
+            "Scale (vector, xScaleFactor, yScaleFactor, zScaleFactor)"
+        ],
         "folderPath": "Geometry/Vector/Action",
-        "inDepth": "Add in-depth information about Scale (vector, xScaleFactor, yScaleFactor, zScaleFactor)...",
+        "inDepth": "Scale (vector, xScaleFactor, yScaleFactor, zScaleFactor) will return a new Vector scaled non-uniformly in the X, Y and Z directions. In the example below, two new Vectors are scaled from an X scale factor and Y/Z scale factors. All scale factors are 2, yet different Vector lengths are returned from scaling in different and/or multiple directions.",
         "index": 683
     },
     {
@@ -10248,10 +10304,14 @@
             "Geometry",
             "Vector"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Transform"
+        ],
+        "imageFile": [
+            "Transform"
+        ],
         "folderPath": "Geometry/Vector/Action",
-        "inDepth": "Add in-depth information about Transform...",
+        "inDepth": "Transform will return a new Vector based on an input CoordinateSystem. In the example below, a Vector is transformed from the WorldCoordinateSystem to a new CoordinateSystem defined by spherical coordinates. Try adjusting the sliders to move the new Vector into a different position. Both Vectors are represented as Lines.",
         "index": 684
     },
     {
@@ -10260,10 +10320,14 @@
             "Geometry",
             "Vertex"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "AdjacentEdges"
+        ],
+        "imageFile": [
+            "AdjacentEdges"
+        ],
         "folderPath": "Geometry/Vertex/Query",
-        "inDepth": "Add in-depth information about AdjacentEdges...",
+        "inDepth": "AdjacentEdges will return the Edges that emanate from a Vertex. In the example below, the Edges emanating from a Vertex on a Cube are represented as Lines. Adjust the Edges slider to return different sets of adjacent Edges.",
         "index": 685
     },
     {
@@ -10272,10 +10336,14 @@
             "Geometry",
             "Vertex"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "PointGeometry"
+        ],
+        "imageFile": [
+            "PointGeometry"
+        ],
         "folderPath": "Geometry/Vertex/Query",
-        "inDepth": "Add in-depth information about PointGeometry...",
+        "inDepth": "PointGeometry will return Vertix locations as Points. In the example below, the Vertices of a Cube are returned as Points.",
         "index": 686
     },
     {
@@ -10310,10 +10378,14 @@
         "categories": [
             "BuiltIn"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Flatten"
+        ],
+        "imageFile": [
+            "Flatten"
+        ],
         "folderPath": "BuiltIn/Action",
-        "inDepth": "Add in-depth information about Flatten...",
+        "inDepth": "Flatten will return a 1D List from a multi-dimensional List. In the example below, two List structures of a Point grid are compared by creating a Sphere at a specified Index. The flattened List of Points will return one Point for a Sphere at an Index location. The unflattened List will return 10 Points for Spheres at an Index location as each Index contains a row of points.",
         "index": 689
     },
     {
@@ -10321,10 +10393,14 @@
         "categories": [
             "BuiltIn"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "IndexOf"
+        ],
+        "imageFile": [
+            "IndexOf"
+        ],
         "folderPath": "BuiltIn/Action",
-        "inDepth": "Add in-depth information about IndexOf...",
+        "inDepth": "IndexOf will return the Index location of a member in the List. In the example below, the number 3.8 in a List has an Index value of 2.",
         "index": 690
     },
     {
@@ -10333,10 +10409,14 @@
             "Core",
             "DateTime"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Components"
+        ],
+        "imageFile": [
+            "Components"
+        ],
         "folderPath": "Core/DateTime/Action",
-        "inDepth": "Add in-depth information about Components...",
+        "inDepth": "Components will return what makes up a DateTime such as the Year, Month, Day, Hour, etc. In the example below, a DateTime of now returns 2016 for Year, 11 for Month, 30 for Day, and 13 for Hour.",
         "index": 691
     },
     {
@@ -10345,10 +10425,14 @@
             "Core",
             "TimeSpan"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Add"
+        ],
+        "imageFile": [
+            "Add"
+        ],
         "folderPath": "Core/TimeSpan/Action",
-        "inDepth": "Add in-depth information about Add...",
+        "inDepth": "Add will return a new TimeSpan as the sum of two TimeSpans. In the example below, a TimeSpan of 10 Days is added to one of 5 Hours, returning a new TimeSpan of 10 Days and 5 Hours.",
         "index": 692
     },
     {
@@ -10357,10 +10441,14 @@
             "Core",
             "TimeSpan"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Components"
+        ],
+        "imageFile": [
+            "Components"
+        ],
         "folderPath": "Core/TimeSpan/Action",
-        "inDepth": "Add in-depth information about Components...",
+        "inDepth": "Components will return what makes up a TimeSpan such as the Days, Hours, Minutes, etc. In the example below, a TimeSpan of 5:16:21 returns 0 Days, 5 Hours, 6 Minutes, 21 Seconds, and 0 Milliseconds.",
         "index": 693
     },
     {
@@ -10369,10 +10457,14 @@
             "Core",
             "TimeSpan"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "FromString"
+        ],
+        "imageFile": [
+            "FromString"
+        ],
         "folderPath": "Core/TimeSpan/Action",
-        "inDepth": "Add in-depth information about FromString...",
+        "inDepth": "FromString will return a TimeSpan from a String formatted as 00.00:00:00.000. In the example below, a String \"5:6:21\" will return a TimeSpan of 5 Hours, 6 Minutes, and 21 Seconds.",
         "index": 694
     },
     {
@@ -10381,10 +10473,14 @@
             "Core",
             "TimeSpan"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Subtract"
+        ],
+        "imageFile": [
+            "Subtract"
+        ],
         "folderPath": "Core/TimeSpan/Action",
-        "inDepth": "Add in-depth information about Subtract...",
+        "inDepth": "Subtract will return a new TimeSpan by subtracting one TimeSpan from another. In the example below, a new TimeSpan of 9 Days and 19 Hours is created by subtracting a TimeSpan of 5 Hours from one of 10 Days.",
         "index": 695
     },
     {
@@ -10393,10 +10489,14 @@
             "Core",
             "TimeSpan"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "MaxValue"
+        ],
+        "imageFile": [
+            "MaxValue"
+        ],
         "folderPath": "Core/TimeSpan/Query",
-        "inDepth": "Add in-depth information about MaxValue...",
+        "inDepth": "MaxValue will return the maximum value that a TimeSpan can have. In the example below, a TimeSpan of 10,675,199 Days, 2 Hours, 28 Minutes, 5 Seconds, 477 Milliseconds is returned.",
         "index": 696
     },
     {
@@ -10405,10 +10505,14 @@
             "Geometry",
             "BoundingBox"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "IsEmpty"
+        ],
+        "imageFile": [
+            "IsEmpty"
+        ],
         "folderPath": "Geometry/BoundingBox/Action",
-        "inDepth": "Add in-depth information about IsEmpty...",
+        "inDepth": "IsEmpty will return a boolean value based on whether the Bounding Box is empty or not. ",
         "index": 697
     },
     {
@@ -10417,10 +10521,14 @@
             "Geometry",
             "CoordinateSystem"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "ByCylindricalCoordinates"
+        ],
+        "imageFile": [
+            "ByCylindricalCoordinates"
+        ],
         "folderPath": "Geometry/CoordinateSystem/Create",
-        "inDepth": "Add in-depth information about ByCylindricalCoordinates...",
+        "inDepth": "ByCylindricalCoordinates will return a CoordinateSystem at a cylindrical coordinate location. Instead of X, Y, and Z describing the coordinate location, we use radius, theta, and height. This allows us to create CoordinateSystems around a circle or spiral. In the example below, a set of CoordinateSystems at cylindrical coordinate locations are used for a finer degree of control in a boolean difference operation. The CoordinateSystem allows us to move Spheres into or out of the cylinder, producing indents of variable size.",
         "index": 698
     },
     {
@@ -10429,10 +10537,14 @@
             "Geometry",
             "CoordinateSystem"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "BySphericalCoordinates"
+        ],
+        "imageFile": [
+            "BySphericalCoordinates"
+        ],
         "folderPath": "Geometry/CoordinateSystem/Create",
-        "inDepth": "Add in-depth information about BySphericalCoordinates...",
+        "inDepth": "BySphericalCoordinates will return a CoordinateSystem at a spherical coordinate location. Instead of X, Y, and Z describing the coordinate location, we use radius, theta, and phi. In the example below, a Surface is mapped to a Sphere by using Lists of phi and theta values. The number sliders can be adjusted to change how the Surface wraps the Sphere.",
         "index": 699
     },
     {
@@ -10441,10 +10553,14 @@
             "Geometry",
             "CoordinateSystem"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Mirror"
+        ],
+        "imageFile": [
+            "Mirror"
+        ],
         "folderPath": "Geometry/CoordinateSystem/Action",
-        "inDepth": "Add in-depth information about Mirror...",
+        "inDepth": "Mirror will return a new CoordinateSystem mirrored across a Plane. In the example below, a CoordinateSystem at coordinates (2,3,1) is mirrored across the YZ Plane of the WCS and returns a CoordinateSystem at (-2,3,1).",
         "index": 700
     },
     {
@@ -10456,7 +10572,7 @@
         "dynFile": [],
         "imageFile": [],
         "folderPath": "Geometry/CoordinateSystem/Action",
-        "inDepth": "Add in-depth information about Scale1D...",
+        "inDepth": "Scale1D will return a new Plane ",
         "index": 701
     },
     {
@@ -10477,10 +10593,14 @@
             "Geometry",
             "CoordinateSystem"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Origin"
+        ],
+        "imageFile": [
+            "Origin"
+        ],
         "folderPath": "Geometry/CoordinateSystem/Query",
-        "inDepth": "Add in-depth information about Origin...",
+        "inDepth": "Origin will return a Point at the origin of a CoordinateSystem. In the example below, a CoordinateSystem with an origin of (2,3) will return a Point at (2,3).",
         "index": 703
     },
     {
@@ -10489,10 +10609,14 @@
             "Geometry",
             "CoordinateSystem"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "XAxis"
+        ],
+        "imageFile": [
+            "XAxis"
+        ],
         "folderPath": "Geometry/CoordinateSystem/Query",
-        "inDepth": "Add in-depth information about XAxis...",
+        "inDepth": "XAxis will return the X Axis of a CoordinateSystem as a Vector. In the example below, the X Axis of a CoordinateSystem is represented as a Line.",
         "index": 704
     },
     {
@@ -10501,10 +10625,14 @@
             "Geometry",
             "CoordinateSystem"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "YAxis"
+        ],
+        "imageFile": [
+            "YAxis"
+        ],
         "folderPath": "Geometry/CoordinateSystem/Query",
-        "inDepth": "Add in-depth information about YAxis...",
+        "inDepth": "YAxis will return the Y Axis of a CoordinateSystem as a Vector. In the example below, the Y Axis of a CoordinateSystem is represented as a Line.",
         "index": 705
     },
     {
@@ -10513,10 +10641,14 @@
             "Geometry",
             "Cylinder"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "ByPointsRadius
+        ],
+        "imageFile": [
+            "ByPointsRadius
+        ],
         "folderPath": "Geometry/Cylinder/Create",
-        "inDepth": "Add in-depth information about ByPointsRadius...",
+        "inDepth": "ByPointsRadius will return a Cylinder based start and end Points and a radius. In the example below, adjusting the number sliders will change the point positions as well as the Cylinder's radius.",
         "index": 706
     },
     {
@@ -10525,10 +10657,14 @@
             "Geometry",
             "Cylinder"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Radius"
+        ],
+        "imageFile": [
+            "Radius"
+        ],
         "folderPath": "Geometry/Cylinder/Query",
-        "inDepth": "Add in-depth information about Radius...",
+        "inDepth": "Radius will return the radius of a Cylinder as a double. In the example below, adjusting the number slider will change the Cylinder's radius.",
         "index": 707
     },
     {
@@ -10537,10 +10673,14 @@
             "Geometry",
             "Geometry"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "IsAlmostEqualTo"
+        ],
+        "imageFile": [
+            "IsAlmostEqualTo"
+        ],
         "folderPath": "Geometry/Geometry/Action",
-        "inDepth": "Add in-depth information about IsAlmostEqualTo...",
+        "inDepth": "IsAlmostEqualTo will return a boolean value based on whether two pieces of geometry share the same representational or numerical values. In the examples below, three Cylinders overlap each other. Two return true if they are in the same position, but will return false with the Solid. The sliders can be adjusted to change one Cylinder's position or height, affecting whether it is equal to the other Cylinder.",
         "index": 708
     },
     {
@@ -10549,10 +10689,14 @@
             "Geometry",
             "IndexGroup"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Count"
+        ],
+        "imageFile": [
+            "Count"
+        ],
         "folderPath": "Geometry/IndexGroup/Query",
-        "inDepth": "Add in-depth information about Count...",
+        "inDepth": "Count will return an Integer that represents the number of Indices in an IndexGroup. In the example below, Index counts are returned for two different Mesh faces with three and four edges.",
         "index": 709
     },
     {
@@ -10585,10 +10729,14 @@
             "Geometry",
             "NurbsSurface"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "ControlPoints"
+        ],
+        "imageFile": [
+            "ControlPoints"
+        ],
         "folderPath": "Geometry/NurbsSurface/Action",
-        "inDepth": "Add in-depth information about ControlPoints...",
+        "inDepth": "ControlPoints will return the ControlPoints of a NurbsSurface as Points in a List of Lists. In the example below, the ControlPoints are returned from a NurbsSurface created from a Patch.",
         "index": 712
     },
     {
@@ -10597,10 +10745,14 @@
             "Geometry",
             "NurbsSurface"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Weights"
+        ],
+        "imageFile": [
+            "Weights"
+        ],
         "folderPath": "Geometry/NurbsSurface/Action",
-        "inDepth": "Add in-depth information about Weights...",
+        "inDepth": "Weights will return the Weights of a NurbsSurface as doubles in a List of Lists. In the example below, a NurbsSurface returns Weights with a value of 1.",
         "index": 713
     },
     {
@@ -10609,10 +10761,14 @@
             "Geometry",
             "NurbsSurface"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "IsRational"
+        ],
+        "imageFile": [
+            "IsRational"
+        ],
         "folderPath": "Geometry/NurbsSurface/Query",
-        "inDepth": "Add in-depth information about IsRational...",
+        "inDepth": "IsRational will return a boolean value based on whether a NurbsSurface is rational. In the example below, a NurbsSurface created by approximating a Surface returns a false value.",
         "index": 714
     },
     {
@@ -10621,10 +10777,14 @@
             "Geometry",
             "Point"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Origin"
+        ],
+        "imageFile": [
+            "Origin"
+        ],
         "folderPath": "Geometry/Point/Create",
-        "inDepth": "Add in-depth information about Origin...",
+        "inDepth": "Origin will return a Point at the Origin of the WorldCoordinateSystem. In the example below, a Circle by centerpoint and radius is created using a Point at the WCS Origin.",
         "index": 715
     },
     {
@@ -10633,10 +10793,14 @@
             "Geometry",
             "PolyCurve"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Fillet"
+        ],
+        "imageFile": [
+            "Fillet"
+        ],
         "folderPath": "Geometry/PolyCurve/Action",
-        "inDepth": "Add in-depth information about Fillet...",
+        "inDepth": "Fillet will return a new PolyCurve with corners filleted to an input radius. In the example below, a closed PolyCurve is returned with a corners filleted to the standard radius of 1.",
         "index": 716
     },
     {
@@ -10645,10 +10809,14 @@
             "Geometry",
             "PolySurface"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "ByJoinedSurfaces"
+        ],
+        "imageFile": [
+            "ByJoinedSurfaces"
+        ],
         "folderPath": "Geometry/PolySurface/Create",
-        "inDepth": "Add in-depth information about ByJoinedSurfaces...",
+        "inDepth": "ByJoinedSurfaces will return a new PolySurface joined from a list of Surfaces. In the example below, two Surface patches and an extrusion are joined into a PolySurface resembling a cylinder.",
         "index": 717
     },
     {
@@ -10657,10 +10825,14 @@
             "Geometry",
             "PolySurface"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "ByLoft (crossSections)"
+        ],
+        "imageFile": [
+            "ByLoft (crossSections)"
+        ],
         "folderPath": "Geometry/PolySurface/Create",
-        "inDepth": "Add in-depth information about ByLoft (crossSections)...",
+        "inDepth": "ByLoft (crossSections) will return a new PolySurface by lofting between a List of Curves. In the example below, a PolySurface is returned from lofting between two Circles.",
         "index": 718
     },
     {
@@ -10669,10 +10841,14 @@
             "Geometry",
             "PolySurface"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "ByLoft (crossSections, guideCurve)"
+        ],
+        "imageFile": [
+            "ByLoft (crossSections, guideCurve)"
+        ],
         "folderPath": "Geometry/PolySurface/Create",
-        "inDepth": "Add in-depth information about ByLoft (crossSections, guideCurve)...",
+        "inDepth": "ByLoft (crossSections, guideCurve) will return a new PolySurface by lofting between a List of Curves and guide Curve. In the example below, a new PolySurface is returned by lofting between two Circles. The returned PolySurface is distorted by adjusting the arc of the guideCurve input.",
         "index": 719
     },
     {
@@ -10681,10 +10857,14 @@
             "Geometry",
             "PolySurface"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Chamfer"
+        ],
+        "imageFile": [
+            "Chamfer"
+        ],
         "folderPath": "Geometry/PolySurface/Action",
-        "inDepth": "Add in-depth information about Chamfer...",
+        "inDepth": "Chamfer will return a new PolySurface with chamfered edges defined by an offset input. In the example below, a new PolySurface is returned by chamfering the top and bottom edges of a Cylinder by 0.5 offset. The offset input must be small enough to fit on the PolySurface. This node is similar to PolySurface.Fillet, but returns a PolySurface with new edges.",
         "index": 720
     },
     {
@@ -10693,10 +10873,14 @@
             "Geometry",
             "PolySurface"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Fillet"
+        ],
+        "imageFile": [
+            "Fillet"
+        ],
         "folderPath": "Geometry/PolySurface/Action",
-        "inDepth": "Add in-depth information about Fillet...",
+        "inDepth": "Fillet will return a new PolySurface with filleted or round edges defined by a radius input. In the example below, a new Cylinder is returned with its edges rounded to a radius of 0.5. The radius input must be small enough to fit on the PolySurface. This node is similar to PolySurface.Chamfer",
         "index": 721
     },
     {
@@ -10705,10 +10889,14 @@
             "Geometry",
             "Solid"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "BySweep2Rails"
+        ],
+        "imageFile": [
+            "BySweep2Rails"
+        ],
         "folderPath": "Geometry/Solid/Create",
-        "inDepth": "Add in-depth information about BySweep2Rails...",
+        "inDepth": "BySweep2Rails will return a new Solid from a Curve profile swept along two Curve rails. In the example below, a new Solid is returned from sweeping a Circle along a skewed Line and an Arc.",
         "index": 722
     },
     {
@@ -10717,10 +10905,14 @@
             "Geometry",
             "Surface"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Area"
+        ],
+        "imageFile": [
+            "Area"
+        ],
         "folderPath": "Geometry/Surface/Query",
-        "inDepth": "Add in-depth information about Area...",
+        "inDepth": "Area will return the area of a Surface as a double. In the example below, a Surface extruded from a Circle with radius 5 to a height of 3 returns an area of ~94.25.",
         "index": 723
     },
     {
@@ -10730,10 +10922,14 @@
             "Tessellation",
             "ConvexHull"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "ByPoints"
+        ],
+        "imageFile": [
+            "ByPoints"
+        ],
         "folderPath": "Geometry/Tessellation/ConvexHull/Action",
-        "inDepth": "Add in-depth information about ByPoints...",
+        "inDepth": "ByPoints will return a List of Curves that represent the Convex Hull of a set of Points. In the example below, a List of Points randomly placed in 3D returns a List of Curves representing their Convex Hull.",
         "index": 724
     },
     {
@@ -10743,10 +10939,14 @@
             "Tessellation",
             "Delaunay"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "ByPoints"
+        ],
+        "imageFile": [
+            "ByPoints"
+        ],
         "folderPath": "Geometry/Tessellation/Delaunay/Action",
-        "inDepth": "Add in-depth information about ByPoints...",
+        "inDepth": "ByPoints will return a List of Curves that represent the Delaunay triangulation of a set of Points. In the example below, a List of Points randomly placed in 3D returns a List of Curves representing their Delaunay triangulation.",
         "index": 725
     },
     {
@@ -10756,10 +10956,14 @@
             "Tessellation",
             "Voronoi"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "ByParametersOnSurface"
+        ],
+        "imageFile": [
+            "ByParametersOnSurface"
+        ],
         "folderPath": "Geometry/Tessellation/Voronoi/Action",
-        "inDepth": "Add in-depth information about ByParametersOnSurface...",
+        "inDepth": "ByParametersOnSurface will return a Voronoi representation of a Surface's UV as a List of Curves. In the example below, a Voronoi representation is created on a Surface using a UV system of 50 random values. In order for the Voronoi to stop at the edges of the Surface, the returned Curves must be intersected with the Surface.",
         "index": 726
     },
     {
@@ -10768,10 +10972,14 @@
             "Geometry",
             "Topology"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Edges"
+        ],
+        "imageFile": [
+            "Edges"
+        ],
         "folderPath": "Geometry/Topology/Query",
-        "inDepth": "Add in-depth information about Edges...",
+        "inDepth": "Edges will return a List of Edges from an input geometry. In the example below, a Cuboid returns a List of 12 Edges.",
         "index": 727
     },
     {
@@ -10780,10 +10988,14 @@
             "Geometry",
             "Topology"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Vertices"
+        ],
+        "imageFile": [
+            "Vertices"
+        ],
         "folderPath": "Geometry/Topology/Query",
-        "inDepth": "Add in-depth information about Vertices...",
+        "inDepth": "Vertices will return a List of Vertex locations for an input geometry. In the example below, the a Cuboid returns a list of 8 Vertex locations.",
         "index": 728
     },
     {
@@ -10792,10 +11004,14 @@
             "Geometry",
             "Vector"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "ByCoordinates (x, y, z)"
+        ],
+        "imageFile": [
+            "ByCoordinates (x, y, z)"
+        ],
         "folderPath": "Geometry/Vector/Create",
-        "inDepth": "Add in-depth information about ByCoordinates (x, y, z)...",
+        "inDepth": "ByCoordinates (x, y, z) will return a Vector from X, Y, and Z coordinates. The input coordinate location defines the Vector's position and length. In the example below, a Vector is returned from a coordinate location of (1,0,1) and is represented as a Line.",
         "index": 729
     },
     {
@@ -10804,10 +11020,14 @@
             "Geometry",
             "Vector"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "XAxis"
+        ],
+        "imageFile": [
+            "XAxis"
+        ],
         "folderPath": "Geometry/Vector/Create",
-        "inDepth": "Add in-depth information about XAxis...",
+        "inDepth": "XAxis will return a Vector that represents the WorldCoordinateSystem X axis. In the example below, the Vector returned is used to create a Line that follows the WCS X axis.",
         "index": 730
     },
     {
@@ -10816,10 +11036,14 @@
             "Geometry",
             "Vector"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "YAxis"
+        ],
+        "imageFile": [
+            "YAxis"
+        ],
         "folderPath": "Geometry/Vector/Create",
-        "inDepth": "Add in-depth information about YAxis...",
+        "inDepth": "YAxis will return a Vector that represents the WorldCoordinateSystem Y axis. In the example below, the Vector returned is used to create a Line that follows the WCS Y axis.",
         "index": 731
     },
     {
@@ -10831,7 +11055,7 @@
         "dynFile": [],
         "imageFile": [],
         "folderPath": "Geometry/Vector/Create",
-        "inDepth": "Add in-depth information about ZAxis...",
+        "inDepth": "ZAxis will return a Vector that represents the WorldCoordinateSystem Z axis. In the example below, the Vector returned is used to create a Line that follows the WCS Z axis.",
         "index": 732
     },
     {
@@ -10840,10 +11064,14 @@
             "Geometry",
             "Vector"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Add"
+        ],
+        "imageFile": [
+            "Add"
+        ],
         "folderPath": "Geometry/Vector/Action",
-        "inDepth": "Add in-depth information about Add...",
+        "inDepth": "Add will return a Vector that is the sum of two other Vectors. In the example below, the sum of the WCS Z axis and X axis Vectors results in a Vector with coordinates of (1,0,1). The new Vector is represented as a Line.",
         "index": 733
     },
     {
@@ -10852,10 +11080,14 @@
             "Geometry",
             "Vector"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "IsAlmostEqualTo"
+        ],
+        "imageFile": [
+            "IsAlmostEqualTo"
+        ],
         "folderPath": "Geometry/Vector/Action",
-        "inDepth": "Add in-depth information about IsAlmostEqualTo...",
+        "inDepth": "IsAlmostEqualTo will return a boolean value based on whether a Vector has the same values as another. In the example below, a true value is returned when comparing a Vector on the WCS Z axis to a Vector with coordinates of (0,0,1). The Vectors are represented as Lines.",
         "index": 734
     },
     {
@@ -10864,10 +11096,14 @@
             "Geometry",
             "Vector"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Reverse"
+        ],
+        "imageFile": [
+            "Reverse"
+        ],
         "folderPath": "Geometry/Vector/Action",
-        "inDepth": "Add in-depth information about Reverse...",
+        "inDepth": "Reverse will return a new Vector pointing in the opposite direction from its input. In the example below, a Vector of (1,0,1) will return a Vector of (-1,0,-1). The Vectors are represented as Lines.",
         "index": 735
     },
     {
@@ -10876,10 +11112,14 @@
             "Geometry",
             "Vector"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Subtract"
+        ],
+        "imageFile": [
+            "Subtract"
+        ],
         "folderPath": "Geometry/Vector/Action",
-        "inDepth": "Add in-depth information about Subtract...",
+        "inDepth": "Subtract will return a Vector that is the difference of two other Vectors. In the example below, the difference of the a Vector with coordinates (1,0,1) and WCS Z axis results in a Vector with coordinates of (1,0,0). The new Vector is represented as a Line."",
         "index": 736
     },
     {
@@ -10888,10 +11128,14 @@
             "Geometry",
             "Vector"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Length"
+        ],
+        "imageFile": [
+            "Length"
+        ],
         "folderPath": "Geometry/Vector/Query",
-        "inDepth": "Add in-depth information about Length...",
+        "inDepth": "Length will return the length of a Vector as a double. In the example below, a Vector with coordinates of (4,0,4) returns a length of 5.67.",
         "index": 737
     },
     {
@@ -10900,10 +11144,14 @@
             "Geometry",
             "Vector"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "X"
+        ],
+        "imageFile": [
+            "X"
+        ],
         "folderPath": "Geometry/Vector/Query",
-        "inDepth": "Add in-depth information about X...",
+        "inDepth": "X will return the X component of a Vector as a double. This can also be understand as the length of a Vector in the X direction. In the example below, a Vector with coordinates of (4,2,3) returns an X component value of 4.",
         "index": 738
     },
     {
@@ -10912,10 +11160,14 @@
             "Geometry",
             "Vector"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Y"
+        ],
+        "imageFile": [
+            "Y"
+        ],
         "folderPath": "Geometry/Vector/Query",
-        "inDepth": "Add in-depth information about Y...",
+        "inDepth": "Y will return the Y component of a Vector as a double. This can also be understand as the length of a Vector in the Y direction. In the example below, a Vector with coordinates of (4,2,3) returns an Y component value of 2.",
         "index": 739
     },
     {
@@ -10924,10 +11176,14 @@
             "Geometry",
             "Vector"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Z"
+        ],
+        "imageFile": [
+            "Z"
+        ],
         "folderPath": "Geometry/Vector/Query",
-        "inDepth": "Add in-depth information about Z...",
+        "inDepth": "Z will return the Z component of a Vector as a double. This can also be understand as the length of a Vector in the Z direction. In the example below, a Vector with coordinates of (4,2,3) returns an Z component value of 3.",
         "index": 740
     },
     {
@@ -10936,10 +11192,14 @@
             "Geometry",
             "Vertex"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "AdjacentFaces"
+        ],
+        "imageFile": [
+            "AdjacentFaces"
+        ],
         "folderPath": "Geometry/Vertex/Query",
-        "inDepth": "Add in-depth information about AdjacentFaces...",
+        "inDepth": "AdjacentFaces will return the Faces adjacent to an input Vertex. In the example below, a Vertex on a Cuboid will return a List of three Faces.",
         "index": 741
     },
     {
@@ -10948,10 +11208,14 @@
             "Office",
             "Excel"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "ReadFromFile"
+        ],
+        "imageFile": [
+            "ReadFromFile"
+        ],
         "folderPath": "Office/Excel/Action",
-        "inDepth": "Add in-depth information about ReadFromFile... ",
+        "inDepth": "ReadFromFile will return the data of an Excel file as a List of Lists. Each sub List represents an Excel row that contains data. In the example below, an Excel file is accessed within Dynamo using the File Path and File.FromPath nodes. The file sampleexcel.xlsx contains data in one column and five rows, returning a List of five sub Lists each with one item. A screenshot of sampleexcel.xlsx is overlaid to show the data in Excel's format.",
         "index": 742
     },
     {
@@ -10960,10 +11224,14 @@
             "Office",
             "Excel"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "WriteToFile"
+        ],
+        "imageFile": [
+            "WriteToFile"
+        ],
         "folderPath": "Office/Excel/Action",
-        "inDepth": "Add in-depth information about WriteToFile...",
+        "inDepth": "WriteToFile will return a List of Lists that is written to an Excel file. The sheet name, start row, and start column of where to write the data can be defined as inputs as well as whether existing data will be overwritten. In the example below, a List of Lists containing a number sequence is written to sampleexcel.xlsx starting at row 0 (or 1 in Excel) and column 1 (or B in Excel). The Excel file now has nine new columns with data in two existing rows. Screenshots of sampleexcel.xlsx before and after writing are overlaid to show the data in Excel's format.",
         "index": 743
     },
     {
