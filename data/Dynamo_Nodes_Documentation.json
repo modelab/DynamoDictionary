@@ -7192,7 +7192,7 @@
             "Insert (list, element, index)"
         ],
         "folderPath": "BuiltIn/Action",
-        "inDepth": "Insert will insert multiple elements into a list at a specified index. In the example below, a list of two strings \"Hello\" and \"List\" are inserted at index value 2. The indices .",
+        "inDepth": "Insert will insert multiple elements into a list at a specified index. In the example below, a list of two strings \"Hello\" and \"List\" are inserted at index value 2, making the list one index longer.",
         "index": 478
     },
     {
@@ -7201,13 +7201,13 @@
             "BuiltIn"
         ],
         "dynFile": [
-            "IsHomogeneous
+            "IsHomogeneous"
         ],
         "imageFile": [
-            "IsHomogeneous
+            "IsHomogeneous"
         ],
         "folderPath": "BuiltIn/Action",
-        "inDepth": "IsHomogeneous will return a boolean value based on whether the elements in a list are all of the same type. In the example below, a simple list of numbers is compared to the same list but with a string inserted. The original list is homogeneous (numbers) and the new list is not homogeneous (numbers and a string).",
+        "inDepth": "IsHomogeneous will return a boolean value based on whether the elements in a list are all of the same type. In the example below, a simple list of numbers is compared to the same list with a string inserted. The original list is homogeneous (numbers) and the new list is not homogeneous (numbers and a string).",
         "index": 479
     },
     {
@@ -7222,7 +7222,7 @@
             "IsRectangular"
         ],
         "folderPath": "BuiltIn/Action",
-        "inDepth": "IsRectangular will return a boolean value based on whether a list's rows have the same number of elements. In the example below, a grid of points used to create a NurbsSurface has a row added with one more point than the other rows. The surface fails to be created until the extra point is removed and the lists of points becomes rectangular. IsRectangular can be used in this instance to check that the list of points is indeed rectangular and will produce a surface.",
+        "inDepth": "IsRectangular will return a boolean value based on whether a list's rows have the same number of elements. In the example below, a false value is returned for a grid of points with an extra point added to a row. A NurbsSurface cannot be created from this point collection until the value returned from IsRectangular is true as NurbsSurfaces require rectangular lists.",
         "index": 480
     },
     {
@@ -7267,7 +7267,7 @@
             "Map"
         ],
         "folderPath": "BuiltIn/Action",
-        "inDepth": "Map will return the position of a number in a range. In the example below, a value of 4 is mapped to a range of 2 to 6. Since 4 is halfway between 2 and 6, a value of 0.5 is returned.",
+        "inDepth": "Map will return the position of a number in a range as a double. In the example below, a value of 4 is mapped to a range of 2 to 6. Since 4 is halfway between 2 and 6, a value of 0.5 is returned.",
         "index": 483
     },
     {
@@ -7282,7 +7282,7 @@
             "MapTo"
         ],
         "folderPath": "BuiltIn/Action",
-        "inDepth": "MapTo will return the position of a number in a range (similar to the Map node), then map that position to a target range. A number in the target range is returned based on the position value. In the example below, the number 3 returns a position of 0.5 between a range of 2 and 4. That position value of 0.5 in a target range of 20 to 100 returns the number 60.",
+        "inDepth": "MapTo will get the position of a number in a range (similar to the Map node), then map that position to a target range. A number in the target range is returned based on the position value. In the example below, the number 3 returns a position of 0.5 between a range of 2 and 4. That position value of 0.5 in a target range of 20 to 100 returns the number 60.",
         "index": 484
     },
     {
@@ -7297,7 +7297,7 @@
             "MaximumItemByKey"
         ],
         "folderPath": "BuiltIn/Action",
-        "inDepth": "MaximumItemByKey will return the largest item in a list based on a key. In the example below, a series of three circles with increasing radii are compared using radius as the key. The node returns the circle at the origin as it has the largest radius.",
+        "inDepth": "MaximumItemByKey will return the largest item in a list based on a key. In the example below, a series of three circles with increasing radii are compared using radius as the key. The circle at (5,0,0) is returned as it has the largest radius.",
         "index": 485
     },
     {
@@ -7312,7 +7312,7 @@
             "MinimumItemByKey"
         ],
         "folderPath": "BuiltIn/Action",
-        "inDepth": "MinimumItemByKey will return the smallest item in a list based on a key. In the example below, a series of three circles with increasing radii are compared using radius as the key. The node returns the circle furthest from the origin as it has the smallest radius.",
+        "inDepth": "MinimumItemByKey will return the smallest item in a list based on a key. In the example below, a series of three circles with increasing radii are compared using radius as the key. The circle at the origin is returned as it has the smallest radius.",
         "index": 486
     },
     {
@@ -7364,7 +7364,7 @@
             "NormalizeDepth (list, rank)"
         ],
         "folderPath": "BuiltIn/Action",
-        "inDepth": "NormalizeDepth will return a new list of uniform depth to a specified rank. In the example below, a list containing two lists of unequal depth can be normalized to different ranks with an integer slider. By normalizing the depths at different ranks the list increases or decreases in depth, but is always uniform. A list of rank 1 will return single list of elements, while a list of rank 3 will return up to two more levels of sub-lists. See node NormalizeDepth (list) for a more detailed description of normalization.",
+        "inDepth": "NormalizeDepth will return a new list of uniform depth to a specified rank. In the example below, a list containing two lists of unequal depth can be normalized to different ranks with an integer slider. By normalizing the depths at different ranks the list increases or decreases in depth, but is always uniform. A list of rank 1 will return single list of elements, while a list of rank 3 will return two levels of sub-lists. See node NormalizeDepth (list) for a more detailed description of normalization.",
         "index": 490
     },
     {
@@ -7390,7 +7390,7 @@
             "RemoveIfNot"
         ],
         "folderPath": "BuiltIn/Action",
-        "inDepth": "RemoveIfNot will return a list with everything removed except a specified type. In the example below, a list with only the type Line is returned by passing Line in as a string to the node.",
+        "inDepth": "RemoveIfNot will return a list with everything removed except a specified type. In the example below, a list is returned with one Line and the Point elements removed.",
         "index": 492
     },
     {
@@ -7461,7 +7461,7 @@
             "SetUnion"
         ],
         "folderPath": "BuiltIn/Action",
-        "inDepth": "SetUnion will return a new list by combining the objects of two lists using an equality comparer. In the example below, a list of 0 to 9 counting by 1 is combined with a list of 0 to 18 counting by 2. The resulting list counts contains all elements from List1 and List2 with duplicates (0, 2, 4, etc) eliminated.",
+        "inDepth": "SetUnion will return a new list by combining the objects of two lists using an equality comparer (eliminate duplicate values). In the example below, a list of 0 to 9 counting by 1 is combined with a list of 0 to 18 counting by 2. The resulting list counts contains all elements from List1 and List2 with duplicates (0, 2, 4, etc) eliminated.",
         "index": 497
     },
     {
@@ -7476,7 +7476,7 @@
             "SortByFunction"
         ],
         "folderPath": "BuiltIn/Action",
-        "inDepth": "SortByFunction will return a list sorted by a function. In the example below, a line is drawn through a list of randomly placed points that have been sorted with different functions. The first curve through an unsorted list is non-directional. Sorting the list using the X or Y component of each point results in two directional lines progressing across X or Y.",
+        "inDepth": "SortByFunction will return a list sorted by a function. In the example below, a line is drawn through a list of randomly placed points that have been sorted with different functions. The first curve through an unsorted list is non-directional. Sorting the list using the X or Y component of each point results in directional lines progressing across X or Y.",
         "index": 498
     },
     {
@@ -7491,7 +7491,7 @@
             "SortIndexByValue (list, ascending)"
         ],
         "folderPath": "BuiltIn/Action",
-        "inDepth": "SortIndexByValue will return a list of indices sorted by their member's values, either ascending or descending. In the example below, a list of random numbers is sorted by either ascending or descending order, and a new order is returned as index values.",
+        "inDepth": "SortIndexByValue will return a list of indices sorted by their member's values, either ascending or descending by a boolean toggle. In the example below, a list of random numbers is sorted by ascending and descending order and a new order is returned as index values.",
         "index": 499
     },
     {
@@ -7552,7 +7552,7 @@
             "AddTimeSpan"
         ],
         "folderPath": "Core/DateTime/Action",
-        "inDepth": "AddTimeSpan will return a new dateTime with a timeSpan added to it. In the example below, one day and eight hours is added to the dateTime for now, returning a date that is one day and eight hours ahead.",
+        "inDepth": "AddTimeSpan will return a new dateTime with a timeSpan added to it. In the example below, one day and eight hours is added to the dateTime for Now, returning a date that is one day and eight hours ahead.",
         "index": 503
     },
     {
@@ -7632,7 +7632,7 @@
             "DayOfYear"
         ],
         "folderPath": "Core/DateTime/Action",
-        "inDepth": "DayOfYear will return the day of the year from a dateTime as a number. In the example below, the dateTime, August 08, 2006 4:24PM, is the 220 day of the year.",
+        "inDepth": "DayOfYear will return the day of the year from a dateTime as a number. In the example below, the dateTime, August 08, 2006 4:24PM, is day 220 of the year.",
         "index": 508
     },
     {
@@ -7680,7 +7680,7 @@
             "IsDaylightSavingsTime"
         ],
         "folderPath": "Core/DateTime/Action",
-        "inDepth": "IsDaylightSavingsTime will return a boolean value based on whether the dateTime falls within Daylight Savings Time. In the example below, a dateTime of November 14, 2016 12:36PM returns false.",
+        "inDepth": "IsDaylightSavingsTime will return a boolean value based on whether the dateTime falls within Daylight Saving Time. In the example below, a dateTime of November 14, 2016 12:36PM returns false.",
         "index": 511
     },
     {
@@ -7712,7 +7712,7 @@
             "SubtractTimeSpan"
         ],
         "folderPath": "Core/DateTime/Action",
-        "inDepth": "SubtractTimeSpan will return a new dateTime by subtracting a timeSpan from a dateTime. In the example below, a timeSpan of one day and eight hours is subtracted from a dateTime of now, returning November 21, 2016 8:45AM.",
+        "inDepth": "SubtractTimeSpan will return a new dateTime by subtracting a timeSpan from a dateTime. In the example below, a timeSpan of one day and eight hours is subtracted from a dateTime of Now, returning November 13, 2016 4:40AM.",
         "index": 513
     },
     {
@@ -7728,7 +7728,7 @@
             "TimeOfDay"
         ],
         "folderPath": "Core/DateTime/Action",
-        "inDepth": "TimeOfDay will return the time past midnight of a dateTime. In the example below, a dateTime of now returns 16:48:55 or roughly 4:48PM.",
+        "inDepth": "TimeOfDay will return the time past midnight of a dateTime. In the example below, a dateTime of Now returns 12:40:32 or roughly 12:40PM.",
         "index": 514
     },
     {
@@ -7748,16 +7748,16 @@
         "index": 515
     },
     {
-        "Name": "MinValue",
+        "Name": "MinValue (",
         "categories": [
             "Core",
             "DateTime"
         ],
         "dynFile": [
-            "MinValue"
+            "MinValue ("
         ],
         "imageFile": [
-            "MinValue"
+            "MinValue ("
         ],
         "folderPath": "Core/DateTime/Query",
         "inDepth": "MinValue will return the minimum value that a dateTime can have. In the example below, a dateTime of January 01, 0001 12:00AM is returned.",
@@ -7788,7 +7788,7 @@
             "Now"
         ],
         "folderPath": "Core/DateTime/Query",
-        "inDepth": "Now will return the current system date and time. The example file below shows Now returning November 22, 2016 5:08PM.",
+        "inDepth": "Now will return the current system date and time. The example file below showed Now as returning November 14, 2016 12:48PM when it was created.",
         "index": 518
     },
     {
@@ -7804,7 +7804,7 @@
             "Today"
         ],
         "folderPath": "Core/DateTime/Query",
-        "inDepth": "Today will return the current date. The example file below shows Today returning November 22, 2016 12:00AM.",
+        "inDepth": "Today will return the current date. The example file below showed Today as returning November 14, 2016 12:00AM when it was created.",
         "index": 519
     },
     {
@@ -7813,8 +7813,12 @@
             "Core",
             "DayOfWeek"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Friday"
+        ],
+        "imageFile": [
+            "Friday"
+        ],
         "folderPath": "Core/DayOfWeek/Query",
         "inDepth": "Friday will return Friday as a DayOfWeek.",
         "index": 520
@@ -7825,8 +7829,12 @@
             "Core",
             "DayOfWeek"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Monday"
+        ],
+        "imageFile": [
+            "Monday"
+        ],
         "folderPath": "Core/DayOfWeek/Query",
         "inDepth": "Monday will return Monday as a DayOfWeek.",
         "index": 521
@@ -7837,8 +7845,12 @@
             "Core",
             "DayOfWeek"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Saturday"
+        ],
+        "imageFile": [
+            "Saturday"
+        ],
         "folderPath": "Core/DayOfWeek/Query",
         "inDepth": "Saturday will return Saturday as a DayOfWeek.",
         "index": 522
@@ -7849,8 +7861,12 @@
             "Core",
             "DayOfWeek"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Sunday"
+        ],
+        "imageFile": [
+            "Sunday"
+        ],
         "folderPath": "Core/DayOfWeek/Query",
         "inDepth": "Sunday will return Sunday as a DayOfWeek.",
         "index": 523
@@ -7861,8 +7877,12 @@
             "Core",
             "DayOfWeek"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Thursday"
+        ],
+        "imageFile": [
+            "Thursday"
+        ],
         "folderPath": "Core/DayOfWeek/Query",
         "inDepth": "Thursday will return Thursday as a DayOfWeek.",
         "index": 524
@@ -7873,8 +7893,12 @@
             "Core",
             "DayOfWeek"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Tuesday"
+        ],
+        "imageFile": [
+            "Tuesday"
+        ],
         "folderPath": "Core/DayOfWeek/Query",
         "inDepth": "Tuesday will return Tuesday as a DayOfWeek.",
         "index": 525
@@ -7885,8 +7909,12 @@
             "Core",
             "DayOfWeek"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Wednesday"
+        ],
+        "imageFile": [
+            "Wednesday"
+        ],
         "folderPath": "Core/DayOfWeek/Query",
         "inDepth": "Wednesday will return Wednesday as a DayOfWeek.",
         "index": 526
@@ -7936,7 +7964,7 @@
             "Evaluate"
         ],
         "folderPath": "Core/Formula/Action",
-        "inDepth": "Evaluate will return a result based on a supplied formula, it's parameters, and arguments. In the example below, the radius length of two circles are compared using a conditional formula to return a boolean value.",
+        "inDepth": "Evaluate will return a result based on a supplied formula as string, it's parameters, and arguments. In the example below, the radius lengths of two circles are compared using a conditional formula to return a boolean value.",
         "index": 529
     },
     {
@@ -8004,7 +8032,7 @@
             "DiagonalLeft"
         ],
         "folderPath": "Core/List/Action",
-        "inDepth": "DiagonalLeft will return a new list of lists of values along each diagonal in the matrix from top right to the lower left. In the example below, a list created by DiagonalLeft is compared to it's source list.",
+        "inDepth": "DiagonalLeft will return a new list of lists of elements along each diagonal in the list matrix from top right to the lower left. In the example below, a list created by DiagonalLeft is compared to it's source list.",
         "index": 534
     },
     {
@@ -8020,7 +8048,7 @@
             "DiagonalRight"
         ],
         "folderPath": "Core/List/Action",
-        "inDepth": "DiagonalRight will return a new list of lists of values along each diagonal in the matrix from lower right to the top left. In the example below, a list created by DiagonalRight is compared to it's source list.",
+        "inDepth": "DiagonalRight will return a new list of lists of values along each diagonal in the list matrix from lower right to the top left. In the example below, a list created by DiagonalRight is compared to it's source list.",
         "index": 535
     },
     {
@@ -8029,8 +8057,12 @@
             "Core",
             "List"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Empty"
+        ],
+        "imageFile": [
+            "Empty"
+        ],
         "folderPath": "Core/List/Query",
         "inDepth": "Empty will return an empty list. In the example, a list is created with several integers and an empty list.",
         "index": 536
@@ -8048,7 +8080,7 @@
             "ByLatitudeAndLongitude"
         ],
         "folderPath": "Core/Location/Create",
-        "inDepth": "ByLatitudeAndLongitude will return a Location from latitude and longitude values (doubles) and a name (string). In the example below, a Location for Portland, OR is created from latitude 45.5231, longitude -122.679565, and a name: Portland.",
+        "inDepth": "ByLatitudeAndLongitude will return a Location from input latitude and longitude values (doubles) and a input name (string). In the example below, a Location is created from latitude 45.5231, longitude -122.679565, and a name: Portland.",
         "index": 537
     },
     {
@@ -8064,7 +8096,7 @@
             "Latitude"
         ],
         "folderPath": "Core/Location/Query",
-        "inDepth": "Latitude will return the latitude value from a Location. In the example below, a latitude of 45.5231 is returned from the Portland Location.",
+        "inDepth": "Latitude will return the latitude value from a Location. In the example below, a latitude of 45.5231 is returned from input Location.",
         "index": 538
     },
     {
@@ -8080,7 +8112,7 @@
             "Longitude"
         ],
         "folderPath": "Core/Location/Query",
-        "inDepth": "Longitude will return the longitude value from a Location. In the example below, a longitude of -122.679565 is returned from the Portland Location.",
+        "inDepth": "Longitude will return the longitude value from a Location. In the example below, a longitude of -122.679565 is returned from the input Location.",
         "index": 539
     },
     {
@@ -8096,7 +8128,7 @@
             "Name"
         ],
         "folderPath": "Core/Location/Query",
-        "inDepth": "Name will return the name value from a Location. In the example below, a name of Portland is returned from the Portland Location.",
+        "inDepth": "Name will return the name value from a Location. In the example below, a name of Portland is returned from the input Location.",
         "index": 540
     },
     {
@@ -8112,7 +8144,7 @@
             "ScopeIf"
         ],
         "folderPath": "Core/Logic/Action",
-        "inDepth": "ScopeIf will return the input of either the True or False input depending on what boolean value is toggled in the test input. In the example file below, a large and small list of numbers is plugged into the True and False inputs. By sending the result of ScopeIfThrough a point creation node, we can toggle between two different sizes of point grids.",
+        "inDepth": "ScopeIf will return the input of either the True or False input depending on what boolean value is toggled in the test input. In the example file below, a large and small list of numbers is plugged into the true and false inputs. By sending the result of ScopeIfThrough a point creation node, we can toggle between two different sizes of point grids.",
         "index": 541
     },
     {
@@ -8128,7 +8160,7 @@
             "Identity"
         ],
         "folderPath": "Core/Object/Action",
-        "inDepth": "Identity will return what is passed in. In the example below, the Identity node is used to preview only part of the geometry created inside of a code block.",
+        "inDepth": "Identity will return what is passed in. In the example below, the Identity node is used to preview each piece of geometry created inside a Code Block.",
         "index": 542
     },
     {
@@ -8144,7 +8176,7 @@
             "IsNull"
         ],
         "folderPath": "Core/Object/Action",
-        "inDepth": "IsNull will return a boolean value based on whether an object is null. In the example below, a grid of circles is drawn with varying radii based on the Red level in a bitmap. Where there is no Red value, no circle is drawn and returns a null in the list of circles. Passing this list through IsNull returns a list of boolean values, with true representing every location of a null value. This list of booleans can be used with List.FilterByBoolMask to return a list clean of nulls."
+        "inDepth": "IsNull will return a boolean value based on whether an object is null. In the example below, a grid of circles is drawn with varying radii based on the Red level in a bitmap. Where there is no Red value, no circle is drawn and returns a null in the list of circles. Passing this list through IsNull returns a list of boolean values, with true representing every location of a null value. This list of booleans can be used with List.FilterByBoolMask to return a list without nulls."
         "index": 543
     },
     {
@@ -8176,16 +8208,16 @@
         "index": 545
     },
     {
-        "Name": "Formula",
+        "Name": "Formula (",
         "categories": [
             "Core",
             "Scripting"
         ],
         "dynFile": [
-            "Formula"
+            "Formula ("
         ],
         "imageFile": [
-            "Formula"
+            "Formula ("
         ],
         "folderPath": "Core/Scripting/Action",
         "inDepth": "Formula uses the NCalc mathematical expressions evaluator to return the result of a formula. In the example below, the result of an if statement using NCalc is drawn as a NurbsCurve.",
@@ -8204,7 +8236,7 @@
             "Python Script"
         ],
         "folderPath": "Core/Scripting/Action",
-        "inDepth": "Python Script will return the result of the node's inputs passed through an embedded IronPython script. In the example below, a cube created from Cuboid.ByCorners is arrayed and translated by a Python script that loops through both x and y. Double clicking the node will bring up an editor for the script.",
+        "inDepth": "Python Script will return the result of the node's inputs passed through an embedded IronPython script. In the example below, a cube created from Cuboid.ByCorners is arrayed and translated by a Python script that loops through both X and Y. Double clicking the node will bring up an editor for the script.",
         "index": 547
     },
     {
@@ -8220,7 +8252,7 @@
             "Python Script From String"
         ],
         "folderPath": "Core/Scripting/Action",
-        "inDepth": "Python Script From String will return the result of the node's inputs passed through a string Python script. In the example below, a Python script is retrieved from a text file and converted into a string to for use in the node. A cube created from Cuboid.ByCorners is arrayed and translated by the Python script by looping through both x and y.",
+        "inDepth": "Python Script From String will return the result of the node's inputs passed through a string Python script. In the example below, a Python script is retrieved from a text file and converted into a string. A cube created from Cuboid.ByCorners is arrayed and translated by the Python script by looping through both X and Y.",
         "index": 548
     },
     {
@@ -8260,7 +8292,7 @@
             "Pause"
         ],
         "folderPath": "Core/Thread/Action",
-        "inDepth": "Pause will return the result of a node after pausing the thread for a specified amount of time. In the example below, a circle is extruded into a surface 5 seconds after the thread is run. To use the time delay, the node should be run in Manual.",
+        "inDepth": "Pause will return the result of a node after pausing the thread for a specified amount of time. In the example below, a circle is extruded into a surface 5 seconds after the thread is run. To use the time delay, the program should be run in Manual.",
         "index": 551
     },
     {
@@ -8276,7 +8308,7 @@
             "ByDateDifference"
         ],
         "folderPath": "Core/TimeSpan/Action",
-        "inDepth": "ByDateDifference will return the difference of two DateTimes as a new TimeSpan. In the example below, the difference between Now and November 14, 2000 11:57AM is returned as 5858 Days, 12 Minutes, and roughly 11 Seconds.",
+        "inDepth": "ByDateDifference will return the difference of two DateTimes as a new TimeSpan. In the example below, the difference between Now and November 14, 2000 11:57AM was returned as 5844 Days, and roughly 4 Seconds.",
         "index": 552
     },
     {
@@ -8340,7 +8372,7 @@
             "TotalDays"
         ],
         "folderPath": "Core/TimeSpan/Action",
-        "inDepth": "TotalDays will return the number of days in a TimeSpan as a double. In the example below, the total number of days in the TimeSpan 2.03:00:00 is returned as ~2.1458333.",
+        "inDepth": "TotalDays will return the number of days in a TimeSpan as a double. In the example below, the total number of days returned from the TimeSpan 2.03:00:00 is ~2.1458333.",
         "index": 556
     },
     {
@@ -8356,7 +8388,7 @@
             "TotalHours"
         ],
         "folderPath": "Core/TimeSpan/Action",
-        "inDepth": "TotalHours will return the number of hours in a TimeSpan as a double. In the example below, the total number of hours in the TimeSpan 2.03:00:00 is returned as 51.5.",
+        "inDepth": "TotalHours will return the number of hours in a TimeSpan as a double. In the example below, the total number of hours returned from the TimeSpan 2.03:00:00 is 51.5.",
         "index": 557
     },
     {
@@ -8372,7 +8404,7 @@
             "TotalMilliseconds"
         ],
         "folderPath": "Core/TimeSpan/Action",
-        "inDepth": "TotalMilliseconds will return the number of hours in a TimeSpan as a double. In the example below, the total number of milliseconds in the TimeSpan 2.03:00:00 is returned as 185400000.",
+        "inDepth": "TotalMilliseconds will return the number of milliseconds in a TimeSpan as a double. In the example below, the total number of milliseconds returned from the TimeSpan 2.03:00:00 is 185400000.",
         "index": 558
     },
     {
@@ -8388,7 +8420,7 @@
             "TotalMinutes"
         ],
         "folderPath": "Core/TimeSpan/Action",
-        "inDepth": "TotalMinutes will return the number of minutess in a TimeSpan as a double. In the example below, the total number of minutes in the TimeSpan 2.03:00:00 is returned as 3090.",
+        "inDepth": "TotalMinutes will return the number of minutes in a TimeSpan as a double. In the example below, the total number of minutes returned from the TimeSpan 2.03:00:00 is 3090.",
         "index": 559
     },
     {
@@ -8397,10 +8429,14 @@
             "Core",
             "TimeSpan"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "TotalSeconds"
+        ],
+        "imageFile": [
+            "TotalSeconds"
+        ],
         "folderPath": "Core/TimeSpan/Action",
-        "inDepth": "Add in-depth information about TotalSeconds...",
+        "inDepth": "TotalSeconds will return the number of seconds in a TimeSpan as a double. In the example below, the total number of seconds returned from the TimeSpan 2.03:00:00 is 185400.",
         "index": 560
     },
     {
@@ -8409,10 +8445,14 @@
             "Core",
             "TimeSpan"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "MinValue"
+        ],
+        "imageFile": [
+            "MinValue"
+        ],
         "folderPath": "Core/TimeSpan/Query",
-        "inDepth": "Add in-depth information about MinValue...",
+        "inDepth": "MinValue will return the minimum value that a TimeSpan can have. In the example below, a TimeSpan of 10,675,199 Days, 2 Hours, 28 Minutes, 5 Seconds, 477 Milliseconds is returned.",
         "index": 561
     },
     {
@@ -8444,7 +8484,7 @@
             "Convert Between Units"
         ],
         "folderPath": "Core/Units/Action",
-        "inDepth": "Convert Between Units will return a converted value based on input and output units. In the example below, 4 meters is converted to feet resulting in a value of ~13.1234.",
+        "inDepth": "Convert Between Units will return a converted value based on input and output units. In the example below, 4 meters is converted to feet returning a value of ~13.1234.",
         "index": 563
     },
     {
@@ -8460,7 +8500,7 @@
             "Number From Feet and Inches"
         ],
         "folderPath": "Core/Units/Action",
-        "inDepth": "Number From Feet and Inches will return a from a feet and inches input. In the example below, 2\' 1\" returns a double of 2.08333",
+        "inDepth": "Number From Feet and Inches will return a double from feet and inches inputs. In the example below, 2\' 1\" returns a double of 2.08333",
         "index": 564
     },
     {
@@ -8488,7 +8528,7 @@
             "Watch"
         ],
         "folderPath": "Core/View/Action",
-        "inDepth": "Watch will display the output of a node in list format. In the example below, the contents of an Excel file are read and returned as a list. Watch is especially useful for understanding the list structures, geometry types, etc that different nodes return.",
+        "inDepth": "Watch will display the output of a node in list format. In the example below, the contents of an Excel file are returned as a list and displayed in a Watch node. Watch is useful for understanding the list structures, geometry types, etc that different nodes return.",
         "index": 566
     },
     {
@@ -8504,7 +8544,7 @@
             "Watch 3D"
         ],
         "folderPath": "Core/View/Action",
-        "inDepth": "Watch 3D will display the geometry output of a node as a new workspace window. In the example below, a Solid is previewed in the Watch3D node, but not in the workspace.",
+        "inDepth": "Watch 3D will preview the geometry output of a node in a new workspace window. In the example below, a Solid is previewed in the Watch3D node while its PolySurface bounding box is previewed in the workspace.",
         "index": 567
     },
     {
@@ -8520,7 +8560,7 @@
             "Watch Image"
         ],
         "folderPath": "Core/View/Action",
-        "inDepth": "Watch Image will preview a bitmap. In the example below, a bitmap used as a height field is displayed in a Watch Image node. This allows us to compare the resulting geometry with the original image.",
+        "inDepth": "Watch Image will preview a bitmap. In the example below, a bitmap used as a height field is previewed in a Watch Image node. This allows us to compare the resulting geometry with the original image.",
         "index": 568
     },
     {
@@ -8536,7 +8576,7 @@
             "Web Request"
         ],
         "folderPath": "Core/Web/Action",
-        "inDepth": "Web Request will return the content of a webpage. In the example below, a web request is made to http://www.google.com. The web page's HTML content is returned.",
+        "inDepth": "Web Request will return the content of a webpage. In the example below, a web request is made to http://www.google.com and its HTML content is returned.",
         "index": 569
     },
     {
@@ -8553,7 +8593,7 @@
             "ByGeometryColor"
         ],
         "folderPath": "Display/Display/Display/Create",
-        "inDepth": "ByGeometryColor will display the input geometry with a defined color. In the example below, a circle is displayed with an RGB color of 227, 136, 200 and an Alpha value of 200.",
+        "inDepth": "ByGeometryColor will display a piece of geometry with an input color. In the example below, a circle is displayed with an RGB color of 227, 136, 200 and an Alpha value of 200. Unless it is turned off, the preview of the original geometry will cover up the new colored one.",
         "index": 570
     },
     {
@@ -8570,7 +8610,7 @@
             "BySurfaceColors"
         ],
         "folderPath": "Display/Display/Display/Create",
-        "inDepth": "BySurfaceColors will display the input geometry with a gradient of colors. In the example below, a circle is displayed with a gradient of two RGB colors.",
+        "inDepth": "BySurfaceColors will display the input geometry with a gradient of colors. In the example below, a circle is displayed with a gradient of two RGB colors. Unless it is turned off, the preview of the original geometry will cover up the new colored one.",
         "index": 571
     },
     {
@@ -8586,7 +8626,7 @@
             "ToPolySurface"
         ],
         "folderPath": "Geometry/BoundingBox/Action",
-        "inDepth": "ToPolySurface will return a piece of geometry's bounding box as a PolySurface. In the example below, the bounding box of several booleaned spheres is returned as a PolySurface. The resulting polysurface is displayed with a color and transparency to show the original geometry inside.",
+        "inDepth": "ToPolySurface will return a bounding box as a PolySurface. In the example below, the bounding box of several unioned spheres is returned as a PolySurface. The resulting PolySurface is displayed with a color and transparency to show the original geometry inside.",
         "index": 572
     },
     {
@@ -8614,7 +8654,7 @@
             "ByOrigin (origin)"
         ],
         "folderPath": "Geometry/CoordinateSystem/Create",
-        "inDepth": "ByOrigin (origin) will return a new CoordinateSystem with it's origin at the input point. In the example below, a new CoordinateSystem is created with its origin at (4,4,0).",
+        "inDepth": "ByOrigin (origin) will return a new CoordinateSystem with it's origin at the input Point. In the example below, a new CoordinateSystem is created with its origin at (4,4,0).",
         "index": 574
     },
     {
@@ -8630,7 +8670,7 @@
             "ByOrigin (x, y)"
         ],
         "folderPath": "Geometry/CoordinateSystem/Create",
-        "inDepth": "ByOrigin (x, y) will return a new CoordinateSystem with the X and Y values of its origin as the node's inputs. In the example below, a new CoordinateSystem is created with it's origin at (4,2,0) from inputs 4 and 2 into X and Y respectively.",
+        "inDepth": "ByOrigin (x, y) will return a new CoordinateSystem with the X and Y values of its origin as inputs. In the example below, a new CoordinateSystem is created with it's origin at (4,2,0) from inputs 4 and 2 into X and Y respectively.",
         "index": 575
     },
     {
@@ -8690,7 +8730,7 @@
             "ByPlane"
         ],
         "folderPath": "Geometry/CoordinateSystem/Create",
-        "inDepth": "ByPlane will return a new CoordinateSystem based on an input Plane. In the example below, the normal of the input Plane has been repositioned, resulting in a CoordinateSystem rotated about the X axis.",
+        "inDepth": "ByPlane will return a new CoordinateSystem based on an input Plane. In the example below, the normal of the input Plane has been repositioned, resulting in a new CoordinateSystem rotated about the X axis.",
         "index": 579
     },
     {
@@ -8734,7 +8774,7 @@
             "Inverse"
         ],
         "folderPath": "Geometry/CoordinateSystem/Action",
-        "inDepth": "Inverse will return an inverted CoordinateSystem from the input. In the example below, a CoordinateSystem at origin (1,2,0) is inverted into a CoordinateSystem at origin (-1,-2,0). The geometry drawn on the CoordinateSystems will be opposite the world origin from each other.",
+        "inDepth": "Inverse will return an inverted CoordinateSystem from the input. In the example below, a CoordinateSystem at (1,2,0) is inverted into a CoordinateSystem at (-1,-2,0). The geometry drawn on the CoordinateSystems will be opposite the WCS origin from each other.",
         "index": 582
     },
     {
@@ -8750,7 +8790,7 @@
             "IsEqualTo"
         ],
         "folderPath": "Geometry/CoordinateSystem/Action",
-        "inDepth": "IsEqualTo will return a boolean value based on whether the values of the input CoordinateSystems are equal to each other. In the example below, two CoordinateSystems with identical positive and negative origin positions are passed through IsEqualTo, returning a false boolean value. However, inverting the positive CoordinateSystem returns a true boolean value from IsEqualTo because it's origin point X and Y values are now negative.",
+        "inDepth": "IsEqualTo will return a boolean value based on whether the values of the input CoordinateSystems are equal to each other. In the example below, two CoordinateSystems with identical, positive and negative origin positions are passed through IsEqualTo, returning a false boolean value. However, inverting the positive CoordinateSystem returns a true boolean value from IsEqualTo because it's origin point X and Y values are now negative.",
         "index": 583
     },
     {
@@ -8782,7 +8822,7 @@
             "PreMultiplyBy"
         ],
         "folderPath": "Geometry/CoordinateSystem/Action",
-        "inDepth": "PreMultiplyBy will return a new CoordinateSystem from multiplying it by a \"other\" (argument) CoordinateSystem and a CoordinateSystem. In the example below, a new CoordinateSystem is returned that is translated and rotated relative to the CoordinateSystem it was multiplied by and it's argument. This node is similar to the PostMultiplyBy node with the only difference being that the other input is applied before the coordinatesystem input.",
+        "inDepth": "PreMultiplyBy will return a new CoordinateSystem from multiplying it by an other (argument) CoordinateSystem and a CoordinateSystem. In the example below, a new CoordinateSystem is returned that is translated and rotated relative to the CoordinateSystem it was multiplied by and it's argument. This node is similar to the PostMultiplyBy node with the only difference being that the other input is applied before the coordinatesystem input.",
         "index": 585
     },
     {
@@ -8870,7 +8910,7 @@
             "Scale (coordinateSystem, amount)"
         ],
         "folderPath": "Geometry/CoordinateSystem/Action",
-        "inDepth": "Scale (coordinateSystem, amount) will return a new CoordinateSystem scaled by a factor. In the example below, a CoordinateSystem at the origin is scaled by a factor of 3.5. The resulting CoordinateSystem has vector lengths and scale factors of 3.5.",
+        "inDepth": "Scale (coordinateSystem, amount) will return a new CoordinateSystem scaled by a factor. In the example below, a CoordinateSystem at the origin is scaled by a factor of 3.5. The resulting CoordinateSystem has vector lengths and scale factors of 3.5. Adjust the slider for different scale factors.",
         "index": 591
     },
     {
@@ -8918,7 +8958,7 @@
             "Transform (coordinateSystem, cs)"
         ],
         "folderPath": "Geometry/CoordinateSystem/Action",
-        "inDepth": "Transform (coordinateSystem, cs) will return a new CoordinateSystem transformed by two input CoordinateSystems. In the example below, the two input CoordinateSystems have been transformed off the origin and result in a new CoordinateSystem transformed even further off the origin. The new CoordinateSystem is identified with a Cylinder created on it.",
+        "inDepth": "Transform (coordinateSystem, cs) will return a new CoordinateSystem transformed by two input CoordinateSystems. In the example below, the two input CoordinateSystems result in a new CoordinateSystem even further from the origin. The new CoordinateSystem is identified with a Cylinder created on it.",
         "index": 594
     },
     {
@@ -8950,7 +8990,7 @@
             "Translate (coordinateSystem, direction, distance)"
         ],
         "folderPath": "Geometry/CoordinateSystem/Action",
-        "inDepth": "Translate (coordinateSystem, direction, distance) will return a new CoordinateSystem translated by an input vector and distance. In the example below, a CoordinateSystem at the origin is translated in a certain direction as defined by the input Vector of (3.1, 4.1,0) and a distance of 3. The distance input will override the vector input's length. The new CoordinateSystem is identified with a Cylinder created on it.",
+        "inDepth": "Translate (coordinateSystem, direction, distance) will return a new CoordinateSystem translated by an input vector and distance. In the example below, a CoordinateSystem at the origin is translated in a direction by the input Vector of (3.1, 4.1,0) and a distance of 3. The distance input will override the vector input's length. The new CoordinateSystem is identified with a Cylinder created on it.",
         "index": 596
     },
     {
@@ -9178,7 +9218,7 @@
             "AdjacentFaces"
         ],
         "folderPath": "Geometry/Edge/Query",
-        "inDepth": "AdjacentFaces will return the Faces adjacent to an input Edge. In the example below, an edge on a solid is identified as have two adjacent faces. The edges are gathered from the solid using Topology.Edges.",
+        "inDepth": "AdjacentFaces will return the Faces adjacent to an input Edge. In the example below, an edge on a solid is identified as having two adjacent faces. The edges are gathered from the solid using Topology.Edges.",
         "index": 612
     },
     {
@@ -9194,7 +9234,7 @@
             "CurveGeometry"
         ],
         "folderPath": "Geometry/Edge/Query",
-        "inDepth": "CurveGeometry will return an Edge as a Curve. In the example below, an identified Edge is drawn as a line.",
+        "inDepth": "CurveGeometry will return an Edge as a Curve. In the example below, an identified Edge is represented as a Curve.",
         "index": 613
     },
     {
@@ -9210,7 +9250,7 @@
             "EndVertex"
         ],
         "folderPath": "Geometry/Edge/Query",
-        "inDepth": "EndVertex will return the Vertex at the end of an Edge. In the example below, the Vertex at the end of an Edge is represented as a Point.",
+        "inDepth": "EndVertex will return the Vertex at the end of an Edge. In the example below, an end Vertex is represented as a Point.",
         "index": 614
     },
     {
@@ -9226,7 +9266,7 @@
             "StartVertex"
         ],
         "folderPath": "Geometry/Edge/Query",
-        "inDepth": "StartVertex will return the Vertex at the start of an Edge. In the example below, the Vertex at the start of an Edge is represented as a Point.",
+        "inDepth": "StartVertex will return the Vertex at the start of an Edge. In the example below, a start Vertex is represented as a Point.",
         "index": 615
     },
     {
@@ -9290,7 +9330,7 @@
             "DeserializeFromSAB"
         ],
         "folderPath": "Geometry/Geometry/Action",
-        "inDepth": "DeserializeFromSAB will return geometry from SAB format data. In the example below, SAB format data is read from a file deserialized into a skewed cylinder.",
+        "inDepth": "DeserializeFromSAB will return geometry from SAB format data. In the example below, SAB data is read from a file and deserialized into a skewed cylinder.",
         "index": 619
     },
     {
@@ -9306,7 +9346,7 @@
             "ExportToSAT (geometry, filePath, unitsMM)"
         ],
         "folderPath": "Geometry/Geometry/Action",
-        "inDepth": "ExportToSAT (geometry, filePath, unitsMM) will return a .SAT file at the specified file path with specified units. In the example below, a cylinder is exported to a file path of C:\\_REFERENCE\exportsample.sat with millimeters as its units. ",
+        "inDepth": "ExportToSAT (geometry, filePath, unitsMM) will return an .SAT file export at the input file path with input units. In the example below, a Cylinder is exported to a file path of C:\\_REFERENCE\exportsample.sat with millimeters as its units. ",
         "index": 620
     },
     {
@@ -9322,7 +9362,7 @@
             "SerializeAsSAB (geometry)"
         ],
         "folderPath": "Geometry/Geometry/Action",
-        "inDepth": "SerializeAsSAB (geometry) will return a list of SAB format data. In the example below, a cylinder is returned as data and shown in a Watch node.",
+        "inDepth": "SerializeAsSAB (geometry) will return a list of SAB format data. In the example below, a Solid is converted to SAB data and returns integers shown in a Watch node.",
         "index": 621
     },
     {
@@ -9338,7 +9378,7 @@
             "BoundingBox"
         ],
         "folderPath": "Geometry/Geometry/Query",
-        "inDepth": "BoundingBox will return a box that contains a piece of geometry. Though the BoundingBox isn't displayed, it is defined by a MinPoint, MaxPoint, and several other parameters.In the example below, a BoundingBox is created for a cylinder and represented as a PolySurface.",
+        "inDepth": "BoundingBox will return a box defined by the geometry it contains. A BoundingBox is not displayed, but can be returned as a PolySurface using the BoundingBox.ToPolySurface node. In the example below, a BoundingBox is created for a unioned Solid and represented as a PolySurface.",
         "index": 622
     },
     {
@@ -9347,10 +9387,14 @@
             "Geometry",
             "Geometry"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "ContextCoordinateSystem"
+        ],
+        "imageFile": [
+            "ContextCoordinateSystem"
+        ],
         "folderPath": "Geometry/Geometry/Query",
-        "inDepth": "ContextCoordinateSystem will return the CoordinateSystem that was used in creating a piece of geometry. In the example below, a cylinder created at centerPoint (3,0,0) returns a CoordinateSystem located at the origin.",
+        "inDepth": "ContextCoordinateSystem will return the CoordinateSystem that was used in creating a piece of geometry. In the example below, a Solid created at centerPoint (3,0,0) returns a CoordinateSystem located at the origin.",
         "index": 623
     },
     {
@@ -9366,7 +9410,7 @@
             "ByIndices (a, b, c, d) (a, b, c, d) (a, b, c, d)"
         ],
         "folderPath": "Geometry/IndexGroup/Create",
-        "inDepth": "ByIndices (a, b, c, d) (a, b, c, d) (a, b, c, d) will return an IndexGroup of four Indices used to created a four-sided Mesh. In the example below, IndexGroup defines the four indices used to create a four-sided Mesh with Mesh.ByPointsFacesIndices.",
+        "inDepth": "ByIndices (a, b, c, d) (a, b, c, d) (a, b, c, d) will return an IndexGroup of four Indices. In the example below, four indices are defined for a four-sided Mesh created with Mesh.ByPointsFacesIndices.",
         "index": 624
     },
     {
@@ -9382,7 +9426,7 @@
             "ByIndices (a, b, c) (a, b, c)"
         ],
         "folderPath": "Geometry/IndexGroup/Create",
-        "inDepth": "ByIndices (a, b, c) (a, b, c) will return an IndexGroup of three Indices used to created a three-sided Mesh. In the example below, IndexGroup defines the three indices used to create a three-sided Mesh with Mesh.ByPointsFacesIndices.",
+        "inDepth": "ByIndices (a, b, c) (a, b, c) will return an IndexGroup of three Indices. In the example below, three indices are defined for a three-sided Mesh created with Mesh.ByPointsFacesIndices.",
         "index": 625
     },
     {
@@ -9462,7 +9506,7 @@
             "ByPointsFaceIndices"
         ],
         "folderPath": "Geometry/Mesh/Create",
-        "inDepth": "ByPointsFaceIndices will return a Mesh based on a collection of vertices as Points and indices. In the example below, a four-sided Mesh is created with four Points and an IndexGroup of four indices.",
+        "inDepth": "ByPointsFaceIndices will return a Mesh based on input vertices as Points and input indices. In the example below, a four-sided Mesh is created with four Points and an IndexGroup of four indices.",
         "index": 630
     },
     {
@@ -9478,7 +9522,7 @@
             "FaceIndices"
         ],
         "folderPath": "Geometry/Mesh/Query",
-        "inDepth": "FaceIndices will return the an IndexGroup or vertices that make up the mesh face in counterclockwise order. In the example below, the an Indexgroup is returned for a four-sided mesh face.",
+        "inDepth": "FaceIndices will return the IndexGroup of a mesh face in counterclockwise order. In the example below, the an Indexgroup is returned for a four-sided mesh face.",
         "index": 631
     },
     {
@@ -9570,7 +9614,7 @@
             "DegreeU"
         ],
         "folderPath": "Geometry/NurbsSurface/Query",
-        "inDepth": "DegreeU will return the degree of a NurbsSurface in the U direction. In the example below, a NurbsSurface created with Points and specified U/V degrees has a degree of 2 in the U direction. Adjusting the number sliders will change the U and V degrees.",
+        "inDepth": "DegreeU will return the degree of a NurbsSurface in the U direction. In the example below, a NurbsSurface created with Points and specified U/V degrees has a degree of 2 in the U direction. Adjusting the number sliders will change the U and V degree values.",
         "index": 637
     },
     {
@@ -9586,7 +9630,7 @@
             "DegreeV"
         ],
         "folderPath": "Geometry/NurbsSurface/Query",
-        "inDepth": "DegreeV will return the degree of a NurbsSurface in the V direction. In the example below, a NurbsSurface created with Points and specified U/V degrees has a degree of 2 in the V direction. Adjusting the number sliders will change the U and V degrees.",
+        "inDepth": "DegreeV will return the degree of a NurbsSurface in the V direction. In the example below, a NurbsSurface created with Points and specified U/V degrees has a degree of 2 in the V direction. Adjusting the number sliders will change the U and V degree values.",
         "index": 638
     },
     {
@@ -9674,7 +9718,7 @@
             "CloseWithLineAndTangentArcs"
         ],
         "folderPath": "Geometry/PolyCurve/Action",
-        "inDepth": "CloseWithLineAndTangentArcs will return a line and tangent arcs to close an open PolyCurve. In the example below, a Polycurve with two segments is closed with a line and arcs. The arcs are defined by whether they are at the start or end of the new line, and their radii can be controlled independently.",
+        "inDepth": "CloseWithLineAndTangentArcs will return a line and tangent arcs to close an open PolyCurve. In the example below, a PolyCurve with two segments is closed with a line and arcs. The arcs are defined by whether they are at the start or end of the new line, and their radii can be controlled independently.",
         "index": 644
     },
     {
@@ -9706,7 +9750,7 @@
             "ByLoftGuides"
         ],
         "folderPath": "Geometry/PolySurface/Create",
-        "inDepth": "ByLoftGuides will return a PolySurface by lofting through a list of PolyCurves (crossSections). In the example below, a PolySurface is created by lofting through three arcs and a curved guideCurve. The arcs give the loft its cross section, and the guideCurve gives the loft a rail to follow.",
+        "inDepth": "ByLoftGuides will return a PolySurface by lofting through a list of PolyCurves (crossSections). In the example below, a PolySurface is created by lofting through three arcs and an arc guideCurve. The arcs give the loft its cross section, and the guideCurve gives the loft a rail to follow.",
         "index": 646
     },
     {
@@ -9722,7 +9766,7 @@
             "BySolid
         ],
         "folderPath": "Geometry/PolySurface/Create",
-        "inDepth": "BySolid will return a PolySurface from a Solid. In the example below, a Solid is returned as a PolySurface to make it work with the Display.BySurfaceColors node.",
+        "inDepth": "BySolid will return a PolySurface from a Solid. In the example below, a Solid is returned as a PolySurface for it to be an acceptable input to Display.BySurfaceColors.",
         "index": 647
     },
     {
@@ -9738,7 +9782,7 @@
             "BySweep (rail, crossSection)"
         ],
         "folderPath": "Geometry/PolySurface/Create",
-        "inDepth": "BySweep (rail, crossSection) will return a PolySurface by sweeping a cross section along a rail. In the example below, a Line and an Arc form a cross section to sweep along an Arc. The crossSection input is capable of receiving a list of connected Curves. If they don't meet at a start or end point, the node will not return a PolySurface. This node is similar to BySweep (rail, profile) with the only difference being that crossSection takes a list of Curves while profile only takes one.",
+        "inDepth": "BySweep (rail, crossSection) will return a PolySurface by sweeping a list of connected, non-intersecting lines along a rail. In the example below, a Line and an Arc form a cross section to sweep along an Arc. The crossSection input can receive a list of connected Curves that must meet at a start or end point, or the node will not return a PolySurface. This node is similar to BySweep (rail, profile) with the only difference being that crossSection takes a list of Curves while profile only takes one.",
         "index": 648
     },
     {
@@ -9770,7 +9814,7 @@
             "EdgeCount" 
         ],
         "folderPath": "Geometry/PolySurface/Action",
-        "inDepth": "EdgeCount will return the number of Edges in a PolySurface. In the example below, an extruded hexagon has an Edge count of 18. The edges are represented as Lines.",
+        "inDepth": "EdgeCount will return the number of Edges on a PolySurface. In the example below, an extruded hexagon has an Edge count of 18. The edges are represented as Lines.",
         "index": 650
     },
     {
@@ -9786,7 +9830,7 @@
             "ExtractSolids"
         ],
         "folderPath": "Geometry/PolySurface/Action",
-        "inDepth": "ExtractSolids will return a Solid from a collection of PolySurfaces. In the example below, a Solid is returned from a collection of three surfaces that form a cylinder. Since the node takes a single PolySurface as an input, it was necessary to join the three surfaces together before extracting a Solid.",
+        "inDepth": "ExtractSolids will return a Solid from a collection of PolySurfaces. In the example below, a Solid is returned from a collection of three surfaces that form a cylinder. Since the node takes a single PolySurface as an input, the three surfaces must be joined together before returning a Solid.",
         "index": 651
     },
     {
@@ -9818,7 +9862,7 @@
             "LocateSurfacesByPoint"
         ],
         "folderPath": "Geometry/PolySurface/Action",
-        "inDepth": "LocateSurfacesByPoint will return the first Surface intersected in the forward direction. The direction is defined by a Vector. In the example below, a Surface is returned that is intersected by a Vector originating at the Point. The Vector is represented as a Line.",
+        "inDepth": "LocateSurfacesByPoint will return the first Surface intersected in the forward direction as defined by a Vector. In the example below, the Surface returned is intersected by a Vector originating at the Point. The Vector is represented as a Line.",
         "index": 653
     },
     {
@@ -9834,7 +9878,7 @@
             "SurfaceCount"
         ],
         "folderPath": "Geometry/PolySurface/Action",
-        "inDepth": "SurfaceCount will return the number of Surfaces in a PolySurface as an integer. In the example below, a hexagon extruded as a Solid returns a count of 8. The node takes a single PolySurface as an input, so a collection of Surfaces will need to be joined before counting.",
+        "inDepth": "SurfaceCount will return the number of Surfaces in a PolySurface as an integer. In the example below, an extruded hexagon returns a count of 8. The node takes a single PolySurface as an input, so a collection of Surfaces will need to be joined before counting.",
         "index": 654
     },
     {
@@ -9850,7 +9894,7 @@
             "Surfaces"
         ],
         "folderPath": "Geometry/PolySurface/Action",
-        "inDepth": "Surfaces will return the Surfaces that make up a PolySurface. In the example below, a hexagon extruded as a solid will return eight individual Surfaces.",
+        "inDepth": "Surfaces will return the Surfaces that make up a PolySurface. In the example below, a extruded hexagon will return eight individual Surfaces.",
         "index": 655
     },
     {
@@ -9866,7 +9910,7 @@
             "UnconnectedBoundaries"
         ],
         "folderPath": "Geometry/PolySurface/Action",
-        "inDepth": "UnconnectedBoundaries will return PolyCurves that represent boundaries unconnected to other Surfaces. In the example below, an extruded hexagon returns it's top and bottom boundaries as PolyCurves since they are open.",
+        "inDepth": "UnconnectedBoundaries will return PolyCurves that represent open boundaries. In the example below, an extruded hexagon returns it's top and bottom boundaries as PolyCurves since they are unconnected.",
         "index": 656
     },
     {
@@ -9882,7 +9926,7 @@
             "VertexCount"
         ],
         "folderPath": "Geometry/PolySurface/Action",
-        "inDepth": "VertexCount will return the number of Vertices of a PolySurface as an integer. In the example below, a solid, extruded hexagon returns a Vertice count of 12. The Vertices are represented as Points.",
+        "inDepth": "VertexCount will return the number of Vertices of a PolySurface as an integer. In the example below, an extruded hexagon returns a Vertice count of 12. The Vertices are represented as Points.",
         "index": 657
     },
     {
@@ -9914,7 +9958,7 @@
             "Join (surface, otherSurfaces)"
         ],
         "folderPath": "Geometry/Surface/Action",
-        "inDepth": "Join (surface, otherSurfaces) will return a single PolySurface by joining one Surface will a collection of others. In the example below, an extruded Surface is joined with a Surface that matches it's profile returning a single PolySurface.",
+        "inDepth": "Join (surface, otherSurfaces) will return a single PolySurface by joining one Surface will a collection of others. In the example below, an extruded Surface is joined with a Surface that matches it's profile returning a PolySurface.",
         "index": 659
     },
     {
@@ -9974,7 +10018,7 @@
             "ClosedInU"
         ],
         "folderPath": "Geometry/Surface/Query",
-        "inDepth": "ClosedInU will return a boolean value based on whether a Surface is closed in it's U directions. In the example below, an extruded circle that is closed in one direction returns false for being closed in U.",
+        "inDepth": "ClosedInU will return a boolean value based on whether a Surface is closed in it's U direction. In the example below, an extruded circle that is closed in one direction returns false for being closed in U.",
         "index": 663
     },
     {
@@ -9990,7 +10034,7 @@
             "ClosedInV"
         ],
         "folderPath": "Geometry/Surface/Query",
-        "inDepth": "ClosedInV will return a boolean value based on whether a Surface is closed in it's V directions. In the example below, an extruded circle that is closed in one direction returns true for being closed in V",
+        "inDepth": "ClosedInV will return a boolean value based on whether a Surface is closed in it's V direction. In the example below, an extruded circle that is closed in one direction returns true for being closed in V",
         "index": 664
     },
     {
@@ -10006,7 +10050,7 @@
             "Perimeter"
         ],
         "folderPath": "Geometry/Surface/Query",
-        "inDepth": "Perimeter will return the length of a Surface's perimeter as a double. In the example below, a complex NurbsSurface's perimeter returns a value of ~36.432.",
+        "inDepth": "Perimeter will return the length of a Surface's perimeter as a double. In the example below, a complex NurbsSurface's perimeter returns a value of 36.432.",
         "index": 665
     },
     {
@@ -10039,7 +10083,7 @@
             "Faces"
         ],
         "folderPath": "Geometry/Topology/Query",
-        "inDepth": "Faces will return a list of Faces that make up a Topology. In the example below, two chamfered PolySurfaces each return a list of Faces with one being longer as it was chamfered twice.",
+        "inDepth": "Faces will return the list of Faces that make up a Topology. In the example below, two chamfered PolySurfaces return a lists of Faces of different lengths.",
         "index": 667
     },
     {
@@ -10055,7 +10099,7 @@
             "ByCoordinates"
         ],
         "folderPath": "Geometry/UV/Create",
-        "inDepth": "ByCoordinates will return a UV from two doubles or two lists of doubles. In the example below, a UV is returned from 400 random values to create a Delaunay triangulation of a NurbsSurface.",
+        "inDepth": "ByCoordinates will return a UV from two lists of doubles. In the example below, a UV is returned from 400 random values to create a Delaunay triangulation of a NurbsSurface.",
         "index": 668
     },
     {
@@ -10071,7 +10115,7 @@
             "U"
         ],
         "folderPath": "Geometry/UV/Query",
-        "inDepth": "U will return the U value of a UV coordinate. In the example below, the U value of a Point on a NurbsSurface is returned from a UV parameter at a Point on a NurbsSurface. The UV parameter is returned from the Surface.UVParamterAtPoint node.",
+        "inDepth": "U will return the U value of a UV coordinate. In the example below, the U value of a Point location on the NurbsSurface is returned. The UV parameter is returned from the Surface.UVParamterAtPoint node.",
         "index": 669
     },
     {
@@ -10087,7 +10131,7 @@
             "V"
         ],
         "folderPath": "Geometry/UV/Query",
-        "inDepth": "V will return the V value of a UV coordinate. In the example below, the V value of a Point on a NurbsSurface is returned from a UV parameter at a Point on a NurbsSurface. The UV parameter is returned from the Surface.UVParamterAtPoint node.",
+        "inDepth": "V will return the V value of a UV coordinate. In the example below, the V value of a Point location on the NurbsSurface is returned. The UV parameter is returned from the Surface.UVParamterAtPoint node.",
         "index": 670
     },
     {
@@ -10103,7 +10147,7 @@
             "ByCoordinates (x, y, z, normalized)"
         ],
         "folderPath": "Geometry/Vector/Create",
-        "inDepth": "ByCoordinates (x, y, z, normalized) will return a Vector from coordinate values and a normalize boolean toggle. In the example below, a Vector is returned that can be either normalized or not which affects it's length. A Line is created with the Vector to show the length change when toggling normalize.",
+        "inDepth": "ByCoordinates (x, y, z, normalized) will return a Vector from coordinate values and a normalize boolean toggle. In the example below, a Vector is returned with a length of 2.83 that can be normalized to 1. The Vector is represented as a Line to show length change when toggling normalize.",
         "index": 671
     },
     {
@@ -10119,7 +10163,7 @@
             "ByTwoPoints"
         ],
         "folderPath": "Geometry/Vector/Create",
-        "inDepth": "ByTwoPoints will return a Vector defined by two Point locations. In the example below, a Vector created between two Points is represented by a Line. The Vector's length is 3, equal to the distance between Points.",
+        "inDepth": "ByTwoPoints will return a Vector defined by two Point locations. In the example below, a Vector created by two Points is represented by a Line. The Vector's length is 3, equal to the distance between Points.",
         "index": 672
     },
     {
@@ -10215,7 +10259,7 @@
             "IsParallel"
         ],
         "folderPath": "Geometry/Vector/Action",
-        "inDepth": "IsParallel will return a boolean value based on whether a Vector is parallel to another Vector. In the example below, two Vectors represented as Lines are compared. Adjust the slider to rotate the Vector in and out of parallel with the other.",
+        "inDepth": "IsParallel will return a boolean value based on whether a Vector is parallel to another Vector. In the example below, two Vectors represented as Lines are compared. Adjust the slider to rotate one Vector in and out of parallel with the other.",
         "index": 678
     },
     {
@@ -10247,7 +10291,7 @@
             "Rotate (vector, origin, degrees)"
         ],
         "folderPath": "Geometry/Vector/Action",
-        "inDepth": "Rotate (vector, origin, degrees) will return a new Vector rotated about the normal of a Plane. In the example below, a Vector represented as a Line is rotated about the normal of the XZ Plane. Try plugging in different Planes for different rotation axes.",
+        "inDepth": "Rotate (vector, origin, degrees) will return a new Vector rotated about the normal of a Plane. In the example below, a Vector represented as a Line is rotated about the normal of the XZ Plane. Plugging in different Planes will give different rotation axes.",
         "index": 680
     },
     {
@@ -10343,7 +10387,7 @@
             "PointGeometry"
         ],
         "folderPath": "Geometry/Vertex/Query",
-        "inDepth": "PointGeometry will return Vertix locations as Points. In the example below, the Vertices of a Cube are returned as Points.",
+        "inDepth": "PointGeometry will return Vertex locations as Points. In the example below, the Vertices of a Cube are returned and represented as Points.",
         "index": 686
     },
     {
@@ -10385,7 +10429,7 @@
             "Flatten"
         ],
         "folderPath": "BuiltIn/Action",
-        "inDepth": "Flatten will return a 1D List from a multi-dimensional List. In the example below, two List structures of a Point grid are compared by creating a Sphere at a specified Index. The flattened List of Points will return one Point for a Sphere at an Index location. The unflattened List will return 10 Points for Spheres at an Index location as each Index contains a row of points.",
+        "inDepth": "Flatten will return a 1D List from a multi-dimensional List. In the example below, two List structures of a Point grid are compared by creating a Sphere at a specified Index of each. The flattened List of Points will return one Point at an Index location. The unflattened List will return 10 Points at an Index location as each Index contains a row of points.",
         "index": 689
     },
     {
@@ -10416,7 +10460,7 @@
             "Components"
         ],
         "folderPath": "Core/DateTime/Action",
-        "inDepth": "Components will return what makes up a DateTime such as the Year, Month, Day, Hour, etc. In the example below, a DateTime of now returns 2016 for Year, 11 for Month, 30 for Day, and 13 for Hour.",
+        "inDepth": "Components will return what makes up a DateTime such as the Year, Month, Day, Hour, etc. In the example below, a DateTime of Now returns 2016 for Year, 11 for Month, 9 for Day, and 17 for Hour.",
         "index": 691
     },
     {
@@ -10448,7 +10492,7 @@
             "Components"
         ],
         "folderPath": "Core/TimeSpan/Action",
-        "inDepth": "Components will return what makes up a TimeSpan such as the Days, Hours, Minutes, etc. In the example below, a TimeSpan of 5:16:21 returns 0 Days, 5 Hours, 6 Minutes, 21 Seconds, and 0 Milliseconds.",
+        "inDepth": "Components will return the Days, Hours, Minutes, etc of a TimeSpan. In the example below, a TimeSpan of 5:16:21 returns 0 Days, 5 Hours, 6 Minutes, 21 Seconds, and 0 Milliseconds.",
         "index": 693
     },
     {
@@ -10464,7 +10508,7 @@
             "FromString"
         ],
         "folderPath": "Core/TimeSpan/Action",
-        "inDepth": "FromString will return a TimeSpan from a String formatted as 00.00:00:00.000. In the example below, a String \"5:6:21\" will return a TimeSpan of 5 Hours, 6 Minutes, and 21 Seconds.",
+        "inDepth": "FromString will return a TimeSpan from a String. In the example below, a String \"5:6:21\" will return a TimeSpan of 5 Hours, 6 Minutes, and 21 Seconds.",
         "index": 694
     },
     {
@@ -10512,7 +10556,7 @@
             "IsEmpty"
         ],
         "folderPath": "Geometry/BoundingBox/Action",
-        "inDepth": "IsEmpty will return a boolean value based on whether the Bounding Box is empty or not. ",
+        "inDepth": "IsEmpty will return a boolean value based on whether the Bounding Box is empty or not.",
         "index": 697
     },
     {
@@ -10648,7 +10692,7 @@
             "ByPointsRadius
         ],
         "folderPath": "Geometry/Cylinder/Create",
-        "inDepth": "ByPointsRadius will return a Cylinder based start and end Points and a radius. In the example below, adjusting the number sliders will change the point positions as well as the Cylinder's radius.",
+        "inDepth": "ByPointsRadius will return a Cylinder from a start Point, end Point, and radius value. In the example below, adjusting the number sliders will change the point positions as well as the Cylinder's radius.",
         "index": 706
     },
     {
@@ -10696,7 +10740,7 @@
             "Count"
         ],
         "folderPath": "Geometry/IndexGroup/Query",
-        "inDepth": "Count will return an Integer that represents the number of Indices in an IndexGroup. In the example below, Index counts are returned for two different Mesh faces with three and four edges.",
+        "inDepth": "Count will return an integer that represents the number of Indices in an IndexGroup. In the example below, Index counts are returned for Mesh faces with three and four edges.",
         "index": 709
     },
     {
@@ -10752,7 +10796,7 @@
             "Weights"
         ],
         "folderPath": "Geometry/NurbsSurface/Action",
-        "inDepth": "Weights will return the Weights of a NurbsSurface as doubles in a List of Lists. In the example below, a NurbsSurface returns Weights with a value of 1.",
+        "inDepth": "Weights will return the Weights of a NurbsSurface as doubles in a List of Lists. In the example below, a NurbsSurface returns a list of Weights with a value of 1.",
         "index": 713
     },
     {
@@ -10800,7 +10844,7 @@
             "Fillet"
         ],
         "folderPath": "Geometry/PolyCurve/Action",
-        "inDepth": "Fillet will return a new PolyCurve with corners filleted to an input radius. In the example below, a closed PolyCurve is returned with a corners filleted to the standard radius of 1.",
+        "inDepth": "Fillet will return a new PolyCurve with corners filleted to an input radius. In the example below, a closed PolyCurve is returned with its corners filleted to the default radius of 1.",
         "index": 716
     },
     {
@@ -10832,7 +10876,7 @@
             "ByLoft (crossSections)"
         ],
         "folderPath": "Geometry/PolySurface/Create",
-        "inDepth": "ByLoft (crossSections) will return a new PolySurface by lofting between a List of Curves. In the example below, a PolySurface is returned from lofting between two Circles.",
+        "inDepth": "ByLoft (crossSections) will return a new PolySurface by lofting between curves in a list. In the example below, a PolySurface is returned from lofting between two circles.",
         "index": 718
     },
     {
@@ -10848,7 +10892,7 @@
             "ByLoft (crossSections, guideCurve)"
         ],
         "folderPath": "Geometry/PolySurface/Create",
-        "inDepth": "ByLoft (crossSections, guideCurve) will return a new PolySurface by lofting between a List of Curves and guide Curve. In the example below, a new PolySurface is returned by lofting between two Circles. The returned PolySurface is distorted by adjusting the arc of the guideCurve input.",
+        "inDepth": "ByLoft (crossSections, guideCurve) will return a new PolySurface by lofting between curves in a list and guide Curve. In the example below, a new PolySurface is returned by lofting between two Circles. The returned PolySurface is distorted by adjusting the arc of the guideCurve input.",
         "index": 719
     },
     {
@@ -10864,7 +10908,7 @@
             "Chamfer"
         ],
         "folderPath": "Geometry/PolySurface/Action",
-        "inDepth": "Chamfer will return a new PolySurface with chamfered edges defined by an offset input. In the example below, a new PolySurface is returned by chamfering the top and bottom edges of a Cylinder by 0.5 offset. The offset input must be small enough to fit on the PolySurface. This node is similar to PolySurface.Fillet, but returns a PolySurface with new edges.",
+        "inDepth": "Chamfer will return a new PolySurface with chamfered edges defined by an offset input. In the example below, a new PolySurface is returned by chamfering the top and bottom edges of a Cylinder by a 0.5 offset. The offset input must be small enough to fit on the PolySurface. This node is similar to PolySurface.Fillet, but returns a PolySurface with new edges.",
         "index": 720
     },
     {
@@ -10880,7 +10924,7 @@
             "Fillet"
         ],
         "folderPath": "Geometry/PolySurface/Action",
-        "inDepth": "Fillet will return a new PolySurface with filleted or round edges defined by a radius input. In the example below, a new Cylinder is returned with its edges rounded to a radius of 0.5. The radius input must be small enough to fit on the PolySurface. This node is similar to PolySurface.Chamfer",
+        "inDepth": "Fillet will return a new PolySurface with filleted (round) edges defined by a radius input. In the example below, a new Cylinder is returned with its edges rounded to a radius of 0.5. The radius input must be small enough to fit on the PolySurface. This node is similar to PolySurface.Chamfer.",
         "index": 721
     },
     {
@@ -10896,7 +10940,7 @@
             "BySweep2Rails"
         ],
         "folderPath": "Geometry/Solid/Create",
-        "inDepth": "BySweep2Rails will return a new Solid from a Curve profile swept along two Curve rails. In the example below, a new Solid is returned from sweeping a Circle along a skewed Line and an Arc.",
+        "inDepth": "BySweep2Rails will return a new Solid from a curve profile swept along two curve rails. In the example below, a new Solid is returned from sweeping a circle along a skewed line and an arc.",
         "index": 722
     },
     {
@@ -10912,7 +10956,7 @@
             "Area"
         ],
         "folderPath": "Geometry/Surface/Query",
-        "inDepth": "Area will return the area of a Surface as a double. In the example below, a Surface extruded from a Circle with radius 5 to a height of 3 returns an area of ~94.25.",
+        "inDepth": "Area will return the area of a surface as a double. In the example below, a surface extruded from a circle with radius 5 to a height of 3 returns an area of ~94.25.",
         "index": 723
     },
     {
@@ -10929,7 +10973,7 @@
             "ByPoints"
         ],
         "folderPath": "Geometry/Tessellation/ConvexHull/Action",
-        "inDepth": "ByPoints will return a List of Curves that represent the Convex Hull of a set of Points. In the example below, a List of Points randomly placed in 3D returns a List of Curves representing their Convex Hull.",
+        "inDepth": "ByPoints will return a list of curves that represent the convex hull of a set of Points. In the example below, a list of points randomly placed in 3D returns a list of curves representing their convex hull.",
         "index": 724
     },
     {
@@ -10946,7 +10990,7 @@
             "ByPoints"
         ],
         "folderPath": "Geometry/Tessellation/Delaunay/Action",
-        "inDepth": "ByPoints will return a List of Curves that represent the Delaunay triangulation of a set of Points. In the example below, a List of Points randomly placed in 3D returns a List of Curves representing their Delaunay triangulation.",
+        "inDepth": "ByPoints will return a list of curves that represent the Delaunay triangulation of a set of points. In the example below, a list of points randomly placed in 3D returns a list of curves representing their Delaunay triangulation.",
         "index": 725
     },
     {
@@ -10963,7 +11007,7 @@
             "ByParametersOnSurface"
         ],
         "folderPath": "Geometry/Tessellation/Voronoi/Action",
-        "inDepth": "ByParametersOnSurface will return a Voronoi representation of a Surface's UV as a List of Curves. In the example below, a Voronoi representation is created on a Surface using a UV system of 50 random values. In order for the Voronoi to stop at the edges of the Surface, the returned Curves must be intersected with the Surface.",
+        "inDepth": "ByParametersOnSurface will return a Voronoi representation of a surface's UV as a list of curves. In the example below, a Voronoi representation is created on a surface using a UV system of 50 random values. In order for the Voronoi to stop at the edges of the surface, the returned curves must be intersected with the surface.",
         "index": 726
     },
     {
@@ -11052,8 +11096,12 @@
             "Geometry",
             "Vector"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "ZAxis"
+        ],
+        "imageFile": [
+            "ZAxis"
+        ],
         "folderPath": "Geometry/Vector/Create",
         "inDepth": "ZAxis will return a Vector that represents the WorldCoordinateSystem Z axis. In the example below, the Vector returned is used to create a Line that follows the WCS Z axis.",
         "index": 732
