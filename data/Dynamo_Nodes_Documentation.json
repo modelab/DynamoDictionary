@@ -3689,7 +3689,7 @@
         "imageFile": [
             "Flatten"
         ],
-        "inDepth": "Flatten will take a nested list and flatten levels of the list by combining the first levels into a single level. The 'amt' input determines how many levels to flatten. Flatten works starts from the first branch. In the example below, we first generate a range of numbers from 1 to 5, stepping by one. This creates a list of 5 elements. We use this list as the input for the lengths of a cuboid, producing a list of 5 cuboids. By exploding the cuboids, we get a list of 6 faces for each cuboid. We now have 5 lists of 6 faces, for a total of 30 elements. We go one step further by finding the edges of each face. The result is 5 lists of 6 lists of 4 edges, or a total of 120 elements. By using a Flatten node, we take the first level, the initial 5 different lists, and combine that into a single list. The resulting output is 30 lists of 4 edges. "
+        "inDepth": "Flatten will take a nested list and flatten levels of the list by combining the first levels into a single level. The 'amt' input determines how many levels to flatten. Flatten starts from the first branch. In the example below, we first generate a range of numbers from 1 to 5, stepping by one. This creates a list of 5 elements. We use this list as the input for the lengths of a cuboid, producing a list of 5 cuboids. By exploding the cuboids, we get a list of 6 faces for each cuboid. We now have 5 lists of 6 faces, for a total of 30 elements. We go one step further by finding the edges of each face. The result is 5 lists of 6 lists of 4 edges, or a total of 120 elements. By using a Flatten node, we take the first level, the initial 5 different lists, and combine that into a single list. The resulting output is 30 lists of 4 edges. "
     },
     {
         "Name": "GetItemAtIndex",
@@ -6997,10 +6997,14 @@
             "Analyze",
             "AnalysisExtensions"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "IsAlmostEqualTo"
+        ],
+        "imageFile": [
+            "IsAlmostEqualTo"
+        ],
         "folderPath": "Analyze/AnalysisExtensions/Action",
-        "inDepth": "Add in-depth information about IsAlmostEqualTo...",
+        "inDepth": "IsAlmostEqualTo will return a boolean value based on whether two input UV values are equal. In the example below, the UV parameters are compared at different points on a NurbsSurface. Adjusting the sliders will choose different UV parameters by index values.",
         "index": 465
     },
     {
@@ -7042,7 +7046,7 @@
             "Contains (list, element)"
         ],
         "folderPath": "BuiltIn/Action",
-        "inDepth": "Contains (list, element) will return a boolean value based on whether a List contains an input element. In the example below, a List containing a number sequence from 0 to 18 returns true for containing 12.",
+        "inDepth": "Contains (list, element) will return a boolean value based on whether a List contains an input element. In the example below, a list of Red values extracted from a bitmap are tested for containing an input value of 0. This is helpful in establishing why the Circle.ByCenterPointRadius is displaying a warning as a circle cannot be created from a radius of 0.",
         "index": 468
     },
     {
@@ -7057,7 +7061,7 @@
             "ContainsKey"
         ],
         "folderPath": "BuiltIn/Action",
-        "inDepth": "ContainsKey will return a boolean value depending on whether a List contains an input key. In the example below, a List containing 10 numbers returns false for containing the Index value of 12.",
+        "inDepth": "ContainsKey will return a boolean value depending on whether a List contains an input key. In the example below, a list of Red values extracted from a bitmap are tested for containing an Index value from an integer slider. Try adjusting the slider to see what values return true or false.",
         "index": 469
     },
     {
@@ -7147,7 +7151,7 @@
             "GroupByFunction"
         ],
         "folderPath": "BuiltIn/Action",
-        "inDepth": "GroupByFunction will return a new list grouped by a function. In the example below, two different lists are grouped using List.GetItemAtIndex as the function. This function creates groups (a new list) from each index at a depth of rank 1.",
+        "inDepth": "GroupByFunction will return a new list grouped by a function. In the example below, two different lists are grouped using List.GetItemAtIndex as the function. This function creates groups (a new list) from each top level index.",
         "index": 475
     },
     {
@@ -10644,7 +10648,7 @@
             "Origin"
         ],
         "folderPath": "Geometry/CoordinateSystem/Query",
-        "inDepth": "Origin will return a Point at the origin of a CoordinateSystem. In the example below, a CoordinateSystem with an origin of (2,3) will return a Point at (2,3).",
+        "inDepth": "Origin will return a Point at the origin of a CoordinateSystem. In the example below, the origins of a set of CoordinateSystems are returned as Points. The CoordinateSystems have been placed by spherical coordinates.",
         "index": 703
     },
     {
@@ -10940,7 +10944,7 @@
             "BySweep2Rails"
         ],
         "folderPath": "Geometry/Solid/Create",
-        "inDepth": "BySweep2Rails will return a new Solid from a curve profile swept along two curve rails. In the example below, a new Solid is returned from sweeping a circle along a skewed line and an arc.",
+        "inDepth": "BySweep2Rails will return a new Solid from a curve profile swept along two curve rails. In the example below, a new Solid is returned from sweeping a circle along two arcs as rails. Switching the arc inputs in rail1 and rail2 will change which arc the sweep is perpendicular to.",
         "index": 722
     },
     {
@@ -11135,7 +11139,7 @@
             "IsAlmostEqualTo"
         ],
         "folderPath": "Geometry/Vector/Action",
-        "inDepth": "IsAlmostEqualTo will return a boolean value based on whether a Vector has the same values as another. In the example below, a true value is returned when comparing a Vector on the WCS Z axis to a Vector with coordinates of (0,0,1). The Vectors are represented as Lines.",
+        "inDepth": "IsAlmostEqualTo will return a boolean value based on whether a Vector has the same values as another. In the example below, a true value is returned when comparing a Vector on the WCS Z axis to a Vector with coordinates of (0,0,1). Adjusting the Vector Direction slider will change the Vector's coordinate values making it unequal. The Vectors are represented as Lines.",
         "index": 734
     },
     {
@@ -11151,7 +11155,7 @@
             "Reverse"
         ],
         "folderPath": "Geometry/Vector/Action",
-        "inDepth": "Reverse will return a new Vector pointing in the opposite direction from its input. In the example below, a Vector of (1,0,1) will return a Vector of (-1,0,-1). The Vectors are represented as Lines.",
+        "inDepth": "Reverse will return a new Vector pointing in the opposite direction from its input. In the example below, a Vector of (1,0,1) will return a Vector of (-1,0,-1). Adjusting the Vector Direction slider will change the vector's coordinate values and return a different reversed vector. The Vectors are represented as Lines.",
         "index": 735
     },
     {
@@ -11167,7 +11171,7 @@
             "Subtract"
         ],
         "folderPath": "Geometry/Vector/Action",
-        "inDepth": "Subtract will return a Vector that is the difference of two other Vectors. In the example below, the difference of the a Vector with coordinates (1,0,1) and WCS Z axis results in a Vector with coordinates of (1,0,0). The new Vector is represented as a Line."",
+        "inDepth": "Subtract will return a Vector that is the difference of two other Vectors. In the example below, the difference of the a Vector with coordinates (1,0,1) and WCS Z axis results in a Vector with coordinates of (1,0,0). Adjusting the Vector Direction slider will change the vector's coordinate values and return a different subtracted vector. The Vectors are represented as Lines.",
         "index": 736
     },
     {
@@ -11183,7 +11187,7 @@
             "Length"
         ],
         "folderPath": "Geometry/Vector/Query",
-        "inDepth": "Length will return the length of a Vector as a double. In the example below, a Vector with coordinates of (4,0,4) returns a length of 5.67.",
+        "inDepth": "Length will return the length of a Vector as a double. In the example below, a Vector with coordinates of (4,0,4) returns a length of 5.67. Adjusting the Length slider will change the Vector's length. The Vector is represented as a Line.",
         "index": 737
     },
     {
@@ -11199,7 +11203,7 @@
             "X"
         ],
         "folderPath": "Geometry/Vector/Query",
-        "inDepth": "X will return the X component of a Vector as a double. This can also be understand as the length of a Vector in the X direction. In the example below, a Vector with coordinates of (4,2,3) returns an X component value of 4.",
+        "inDepth": "X will return the X component of a Vector as a double. This can also be understood as the length of a Vector in the X direction. In the example below, a Vector with coordinates of (4,2,3) returns an X component value of 4. Adjusting the Vector Scale slider will lengthen the Vector and change its X value. The Vector is represented as a Line.",
         "index": 738
     },
     {
@@ -11215,7 +11219,7 @@
             "Y"
         ],
         "folderPath": "Geometry/Vector/Query",
-        "inDepth": "Y will return the Y component of a Vector as a double. This can also be understand as the length of a Vector in the Y direction. In the example below, a Vector with coordinates of (4,2,3) returns an Y component value of 2.",
+        "inDepth": "Y will return the Y component of a Vector as a double. This can also be understood as the length of a Vector in the Y direction. In the example below, a Vector with coordinates of (4,2,3) returns an Y component value of 2. Adjusting the Vector Scale slider will lengthen the Vector and change its Y value. The Vector is represented as a Line.",
         "index": 739
     },
     {
@@ -11231,7 +11235,7 @@
             "Z"
         ],
         "folderPath": "Geometry/Vector/Query",
-        "inDepth": "Z will return the Z component of a Vector as a double. This can also be understand as the length of a Vector in the Z direction. In the example below, a Vector with coordinates of (4,2,3) returns an Z component value of 3.",
+        "inDepth": "Z will return the Z component of a Vector as a double. This can also be understood as the length of a Vector in the Z direction. In the example below, a Vector with coordinates of (4,2,3) returns an Z component value of 3. Adjusting the Vector Scale slider will lengthen the Vector and change its Z value. The Vector is represented as a Line.",
         "index": 740
     },
     {
@@ -11247,7 +11251,7 @@
             "AdjacentFaces"
         ],
         "folderPath": "Geometry/Vertex/Query",
-        "inDepth": "AdjacentFaces will return the Faces adjacent to an input Vertex. In the example below, a Vertex on a Cuboid will return a List of three Faces.",
+        "inDepth": "AdjacentFaces will return the Faces adjacent to an input Vertex. In the example below, a Vertex on a Cuboid will return a List of three Faces. Adjusting the Index Selector slider will change the input Vertex and return different sets of adjacent Faces. The Faces are represented as Surfaces.",
         "index": 741
     },
     {
