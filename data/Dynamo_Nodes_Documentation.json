@@ -7004,7 +7004,7 @@
             "IsAlmostEqualTo"
         ],
         "folderPath": "Analyze/AnalysisExtensions/Action",
-        "inDepth": "IsAlmostEqualTo will return a boolean value based on whether two input UV values are equal. In the example below, the UV parameters are compared at different points on a NurbsSurface. Adjusting the sliders will choose different UV parameters by index values.",
+        "inDepth": "IsAlmostEqualTo will return a boolean value based on whether two input UV values are equal. In the example below, the UV parameters are compared at a Point on two nearly identical surfaces. Adjusting the sliders will choose different UV parameters to compare the surfaces at.",
         "index": 465
     },
     {
@@ -7989,10 +7989,14 @@
             "Core",
             "Input"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Input"
+        ],
+        "imageFile": [
+            "Input"
+        ],
         "folderPath": "Core/Input/Action",
-        "inDepth": "Add in-depth information about Input...",
+        "inDepth": "Input will create an input port for a custom node. The syntax for an input node is input_name : datatype = default_value(optional) and an optional custom comment. In the example below, x and y inputs are created with double data type, default values of 2 and 10, and a custom comment. It is important to note that this node is only available while creating a custom node.",
         "index": 531
     },
     {
@@ -8001,10 +8005,14 @@
             "Core",
             "Input"
         ],
-        "dynFile": [],
-        "imageFile": [],
+        "dynFile": [
+            "Output"
+        ],
+        "imageFile": [
+            "Output"
+        ],
         "folderPath": "Core/Input/Action",
-        "inDepth": "Add in-depth information about Output...",
+        "inDepth": "Output will create an output port for a custom node. The syntax for an output node is simply its name, along with an optional custom comment. In the example below, an output named Percentage is created with a custom comment. It is important to note that this node is only available while creating a custom node.",
         "index": 532
     },
     {
@@ -8580,7 +8588,7 @@
             "Web Request"
         ],
         "folderPath": "Core/Web/Action",
-        "inDepth": "Web Request will return the content of a webpage. In the example below, a web request is made to http://www.google.com and its HTML content is returned.",
+        "inDepth": "Web Request will return the content of a webpage from an input URL as a string. In the example below, a web request is made to http://www.google.com and its HTML content is returned.",
         "index": 569
     },
     {
